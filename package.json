@@ -9,16 +9,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/manyajain27/panache.git"
+    "url": "git+https://github.com/harshvi-dagli/panache.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
   "bugs": {
-    "url": "https://github.com/manyajain27/panache/issues"
+    "url": "https://github.com/harshvi-dagli/panache/issues"
   },
-  "homepage": "https://github.com/manyajain27/panache#readme",
+  "homepage": "https://github.com/harshvi-dagli/panache#readme",
   "dependencies": {
     "concurrently": "^9.2.0"
   }
