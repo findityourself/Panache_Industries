@@ -1,7 +1,20 @@
-import React from "react";
-import { Recycle } from "lucide-react";
+"use client";
+
+import React, { useState } from "react";
+import { Award } from "lucide-react";
 
 export default function QualityControlPage() {
+  // Lab Equipment data for gallery
+  const labEquipment = [
+    { name: "UTS Tester", img: "/q2.jpg" },
+    { name: "Brinell Hardness Tester", img: "/q3.jpg" },
+    { name: "Spectrometer", img: "/q4.jpg" },
+    { name: "Conductivity Tester", img: "/q5.jpg" },
+  ];
+
+  // State to track which image is selected in the gallery
+  const [selectedIndex, setSelectedIndex] = useState(null);
+
   return (
     <div className="min-h-screen bg-white">
       {/* Hero Section */}
@@ -98,7 +111,7 @@ export default function QualityControlPage() {
               <div className="w-12 h-12 sm:w-16 sm:h-16 mb-3 sm:mb-4">
                 <div className="w-full h-full border-2 border-orange-500 rounded flex items-center justify-center relative">
                   <div className="w-6 h-6 sm:w-8 sm:h-8 bg-orange-500 rounded-sm flex items-center justify-center">
-                    <Recycle className="w-3 h-3 sm:w-4 sm:h-4 text-white" />
+                    <Award className="w-3 h-3 sm:w-4 sm:h-4 text-white" />
                   </div>
                   <div className="absolute -bottom-1 -right-1 w-3 h-5 sm:w-4 sm:h-6 bg-orange-500 transform rotate-12"></div>
                 </div>
@@ -117,7 +130,7 @@ export default function QualityControlPage() {
               <div className="w-12 h-12 sm:w-16 sm:h-16 mb-3 sm:mb-4">
                 <div className="w-full h-full border-2 border-orange-500 rounded flex items-center justify-center relative">
                   <div className="w-6 h-6 sm:w-8 sm:h-8 bg-orange-500 rounded-sm flex items-center justify-center">
-                    <Recycle className="w-3 h-3 sm:w-4 sm:h-4 text-white" />
+                    <Award className="w-3 h-3 sm:w-4 sm:h-4 text-white" />
                   </div>
                   <div className="absolute -bottom-1 -right-1 w-3 h-5 sm:w-4 sm:h-6 bg-orange-500 transform rotate-12"></div>
                 </div>
@@ -136,7 +149,7 @@ export default function QualityControlPage() {
               <div className="w-12 h-12 sm:w-16 sm:h-16 mb-3 sm:mb-4">
                 <div className="w-full h-full border-2 border-orange-500 rounded flex items-center justify-center relative">
                   <div className="w-6 h-6 sm:w-8 sm:h-8 bg-orange-500 rounded-sm flex items-center justify-center">
-                    <Recycle className="w-3 h-3 sm:w-4 sm:h-4 text-white" />
+                    <Award className="w-3 h-3 sm:w-4 sm:h-4 text-white" />
                   </div>
                   <div className="absolute -bottom-1 -right-1 w-3 h-5 sm:w-4 sm:h-6 bg-orange-500 transform rotate-12"></div>
                 </div>
@@ -144,7 +157,7 @@ export default function QualityControlPage() {
               <h3 className="font-medium text-gray-800 mb-1 sm:mb-2 text-xl sm:text-2xl">
                 OTHER
               </h3>
-              <p className=" sm:text-base text-lg text-gray-600 leading-relaxed">
+              <p className="sm:text-base text-lg text-gray-600 leading-relaxed">
                 certification description/ metrics etc lorem ipsum dolor sit
                 amet.
               </p>
@@ -154,48 +167,53 @@ export default function QualityControlPage() {
       </section>
 
       {/* Lab Equipment Section */}
-      <section className="py-16 sm:py-20 md:py-24 bg-[#f9f2eb]">
-        <div className="max-w-xl sm:max-w-3xl md:max-w-4xl lg:max-w-6xl mx-auto px-4 sm:px-6 md:px-8">
-          <div className="flex flex-col md:flex-row gap-8 sm:gap-10 md:gap-12 lg:gap-16 items-start md:items-end">
-            <div className="md:w-1/3 w-full self-start md:self-end">
-              <h2 className="text-4xl sm:text-5xl md:text-6xl font-medium text-blue-600 mb-3 sm:mb-4 leading-tight">
-                LAB
-                <br />
-                EQUIPMENT
-              </h2>
-              <p className="text-gray-600 leading-relaxed text-base sm:text-lg">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, aliquam
-                aliquam nisl nisl, eu imperdiet ex ullamcorper eu.
-              </p>
-            </div>
+<section className="py-16 sm:py-20 md:py-24 bg-[#f9f2eb]">
+  <div className="max-w-6xl mx-auto px-4 sm:px-6 md:px-8">
+    <div className="flex flex-col md:flex-row gap-10 md:gap-16 items-center md:items-start">
+      
+      {/* Left: Heading */}
+      <div className="md:w-1/3 w-full text-center md:text-left pt-8 md:pt-16">
+        <h2 className="text-3xl sm:text-4xl font-bold text-blue-600 mb-3 leading-tight uppercase">
+          Lab Equipment
+        </h2>
+        <p className="text-gray-600 text-base sm:text-lg">
+          {/* Optional description */}
+          Our lab is equipped with advanced equipment to ensure precise and reliable quality control.
+        </p>
+      </div>
 
-            <div className="md:w-2/3 w-full">
-              <div className="grid grid-cols-2 gap-3 sm:gap-4">
-                {/* Lab Equipment Image 1 - q2.jpg */}
-                <div
-                  className="h-40 sm:h-48 md:h-56 w-full bg-cover bg-center shadow-md rounded"
-                  style={{ backgroundImage: "url('/q2.jpg')" }}
-                />
-                {/* Lab Equipment Image 2 - q3.jpg */}
-                <div
-                  className="h-40 sm:h-48 md:h-56 w-full bg-cover bg-center shadow-md rounded"
-                  style={{ backgroundImage: "url('/q3.jpg')" }}
-                />
-                {/* Lab Equipment Image 3 - q4.jpg */}
-                <div
-                  className="h-40 sm:h-48 md:h-56 w-full bg-cover bg-center shadow-md rounded"
-                  style={{ backgroundImage: "url('/q4.jpg')" }}
-                />
-                {/* Lab Equipment Image 4 - q5.jpg */}
-                <div
-                  className="h-40 sm:h-48 md:h-56 w-full bg-cover bg-center shadow-md rounded"
-                  style={{ backgroundImage: "url('/q5.jpg')" }}
-                />
-              </div>
+      {/* Right: 2x2 Grid */}
+      <div className="md:w-2/3 w-full grid grid-cols-2 gap-6">
+        {labEquipment.map(({ name, img }, index) => (
+          <div
+            key={name}
+            onClick={() => setSelectedIndex(index)}
+            className={`cursor-pointer rounded-lg overflow-hidden shadow-md transform transition-transform duration-300
+              ${
+                selectedIndex === index
+                  ? "scale-110 shadow-xl ring-4 ring-blue-500"
+                  : "hover:scale-105"
+              }
+            `}
+            title={name}
+          >
+            <img
+              src={img}
+              alt={name}
+              className="w-full h-44 sm:h-52 md:h-56 object-cover"
+              draggable={false}
+            />
+            <div className="text-center mt-2 font-semibold text-gray-800">
+              {name}
             </div>
           </div>
-        </div>
-      </section>
+        ))}
+      </div>
+
     </div>
+  </div>
+</section>
+</div>  // <-- THIS WAS MISSING
   );
 }
+

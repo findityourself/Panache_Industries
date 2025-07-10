@@ -1,8 +1,17 @@
+"use client";
+
 import React from "react";
 
 const InfrastructurePlant = () => {
+  const labEquipment = [
+    { name: "Extrusion presses", img: "/q2.jpg" },
+    { name: "Log shear systems", img: "/q3.jpg" },
+    { name: "Precision furnaces", img: "/q4.jpg" },
+    { name: "Aging ovens", img: "/q5.jpg" },
+  ];
+
   return (
-    <div className="min-h-screen bg-white">
+    <>
       {/* Hero Section */}
       <section
         className="relative min-h-[70vh] sm:min-h-[80vh] md:min-h-[100vh] bg-cover bg-center bg-no-repeat flex items-center text-white py-20 sm:py-24 md:py-32 overflow-hidden bg-[#f7f3ed]"
@@ -40,10 +49,8 @@ const InfrastructurePlant = () => {
                   LOCATION
                 </h4>
                 <p className="text-gray-600 leading-relaxed text-sm sm:text-base">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat.
+                  Multiple fully-automated plants with high-capacity production
+                  and seamless operations.
                 </p>
               </div>
             </div>
@@ -58,41 +65,39 @@ const InfrastructurePlant = () => {
         </div>
       </section>
 
-      {/* Machinery Details Section */}
+      {/* Machinery & Technology Section */}
       <section className="py-16 sm:py-20 md:py-24 bg-[#f7f3ed]">
-        <div className="max-w-xl sm:max-w-3xl md:max-w-4xl lg:max-w-6xl mx-auto px-4 sm:px-6 md:px-8">
-          <div className="flex flex-col md:flex-row gap-8 sm:gap-10 md:gap-12 lg:gap-16 items-center md:items-end">
-            <div className="md:w-2/3 w-full order-2 md:order-1">
-              <div className="grid grid-cols-2 gap-3 sm:gap-4">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 md:px-8">
+          <div className="flex flex-col md:flex-row gap-10 md:gap-16 items-center md:items-start">
+            {/* Left: 2x2 Grid with Hover & Click Effect */}
+            <div className="md:w-2/3 w-full grid grid-cols-2 gap-6">
+              {labEquipment.map(({ name, img }, index) => (
                 <div
-                  className="h-40 sm:h-48 md:h-56 w-full bg-cover bg-center shadow-md rounded"
-                  style={{ backgroundImage: "url('/q3.jpg')" }}
-                />
-                <div
-                  className="h-40 sm:h-48 md:h-56 w-full bg-cover bg-center shadow-md rounded"
-                  style={{ backgroundImage: "url('/q4.jpg')" }}
-                />
-                <div
-                  className="h-40 sm:h-48 md:h-56 w-full bg-cover bg-center shadow-md rounded"
-                  style={{ backgroundImage: "url('/q5.jpg')" }}
-                />
-                <div
-                  className="h-40 sm:h-48 md:h-56 w-full bg-cover bg-center shadow-md rounded"
-                  style={{ backgroundImage: "url('/q1.jpg')" }}
-                />
-              </div>
+                  key={index}
+                  className="bg-white rounded-lg overflow-hidden shadow-md hover:scale-105 transition-transform duration-300 cursor-pointer text-center"
+                >
+                  <img
+                    src={img}
+                    alt={name}
+                    className="w-full h-44 sm:h-52 md:h-56 object-cover"
+                    draggable={false}
+                  />
+                  <div className="py-3 font-semibold text-gray-800 text-base">
+                    {name}
+                  </div>
+                </div>
+              ))}
             </div>
-            <div className="md:w-1/3 w-full pt-8 md:pt-24 order-1 md:order-2 text-center md:text-left">
-              <h2 className="text-3xl sm:text-4xl font-bold text-blue-600 mb-3 sm:mb-4 leading-tight">
-                MACHINERY
-                <br />
-                DETAILS
+
+            {/* Right: Heading & Description */}
+            <div className="md:w-1/3 w-full text-center md:text-left pt-8 md:pt-16">
+              <h2 className="text-3xl sm:text-4xl font-bold text-blue-600 mb-3 leading-tight">
+                MACHINERY & TECHNOLOGY
               </h2>
-              <p className="text-gray-600 leading-relaxed text-base sm:text-lg">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequat.
+              <p className="text-gray-600 text-base sm:text-lg">
+                Our plant is equipped with state-of-the-art machinery to ensure
+                seamless and efficient manufacturing, empowering precision and
+                scalability at every stage.
               </p>
             </div>
           </div>
@@ -104,13 +109,11 @@ const InfrastructurePlant = () => {
         <div className="container mx-auto px-4 sm:px-6 max-w-6xl">
           <div className="mb-12 sm:mb-14 md:mb-16">
             <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4 sm:mb-6">
-              MANUFACTURING WORKFLOW
+              Manufacturing Workflow
             </h2>
             <p className="text-gray-600 leading-relaxed text-sm sm:text-base max-w-full sm:max-w-xl md:max-w-4xl">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea.
+              From raw billets to finished systems — optimized, tracked, and
+              quality-checked.
             </p>
           </div>
 
@@ -118,42 +121,42 @@ const InfrastructurePlant = () => {
             {/* Connecting line for larger screens */}
             <div className="hidden sm:block absolute top-8 left-1/4 right-1/4 h-0.5 bg-gray-300 z-0"></div>
 
+            {/* Step 1 */}
             <div className="text-center relative z-10 w-full sm:w-1/3 px-2">
               <div className="w-14 h-14 sm:w-16 sm:h-16 bg-gradient-to-br from-orange-400 to-orange-600 rounded-xl sm:rounded-2xl mx-auto mb-4 sm:mb-6 flex items-center justify-center shadow-lg transform rotate-12">
                 <div className="w-7 h-7 sm:w-8 sm:h-8 bg-white rounded-md sm:rounded-lg opacity-30"></div>
               </div>
               <h3 className="text-base sm:text-lg font-bold text-gray-900 mb-2 sm:mb-3 tracking-wide">
-                STEP 1
+                Step 1: Raw Material Inspection
               </h3>
               <p className="text-gray-600 text-xs sm:text-sm leading-relaxed">
-                certification development/ analysis of forum ipsum dolor sit
-                amet tempor adipiscing elit.
+                Ensure quality and specifications of incoming billets.
               </p>
             </div>
 
+            {/* Step 2 */}
             <div className="text-center relative z-10 w-full sm:w-1/3 px-2">
               <div className="w-14 h-14 sm:w-16 sm:h-16 bg-gradient-to-br from-orange-400 to-orange-600 rounded-xl sm:rounded-2xl mx-auto mb-4 sm:mb-6 flex items-center justify-center shadow-lg transform rotate-12">
                 <div className="w-7 h-7 sm:w-8 sm:h-8 bg-white rounded-md sm:rounded-lg opacity-30"></div>
               </div>
               <h3 className="text-base sm:text-lg font-bold text-gray-900 mb-2 sm:mb-3 tracking-wide">
-                STEP 2
+                Step 2: Production & Processing
               </h3>
               <p className="text-gray-600 text-xs sm:text-sm leading-relaxed">
-                certification development/ analysis of forum ipsum dolor sit
-                amet tempor adipiscing elit.
+                Optimized extrusion, shaping, and assembly processes.
               </p>
             </div>
 
+            {/* Step 3 */}
             <div className="text-center relative z-10 w-full sm:w-1/3 px-2">
               <div className="w-14 h-14 sm:w-16 sm:h-16 bg-gradient-to-br from-orange-400 to-orange-600 rounded-xl sm:rounded-2xl mx-auto mb-4 sm:mb-6 flex items-center justify-center shadow-lg transform rotate-12">
                 <div className="w-7 h-7 sm:w-8 sm:h-8 bg-white rounded-md sm:rounded-lg opacity-30"></div>
               </div>
               <h3 className="text-base sm:text-lg font-bold text-gray-900 mb-2 sm:mb-3 tracking-wide">
-                STEP 3
+                Step 3: Final Quality Check
               </h3>
               <p className="text-gray-600 text-xs sm:text-sm leading-relaxed">
-                certification development/ analysis of forum ipsum dolor sit
-                amet tempor adipiscing elit.
+                Thorough inspection and testing of finished systems.
               </p>
             </div>
 
@@ -278,83 +281,202 @@ const InfrastructurePlant = () => {
             <h2 className="text-3xl sm:text-4xl font-bold text-blue-600 mb-6 sm:mb-8 tracking-wide">
               EXTRUSION PROCESS
             </h2>
-            <div className="text-left sm:text-right">
-              <h3 className="text-blue-600 text-lg sm:text-xl font-medium mb-1 sm:mb-2">
-                Why Panache is the right extrusion partner?
-              </h3>
-              <p className="text-gray-600 text-sm sm:text-lg max-w-full sm:max-w-md sm:ml-auto">
-                Consectetur adipiscing elit, aliquam aliquam nisi nisi, eu
-                <br className="hidden sm:block" />
-                imperdiet ex ullamcorper eu.
-              </p>
-            </div>
+
+            {/* What is Extrusion */}
+            <div className="mb-8 w-full text-gray-700 text-sm sm:text-base md:text-lg leading-relaxed">
+  <p className="whitespace-nowrap sm:whitespace-normal">
+    A process that shapes heated aluminum by pushing it through a die using high pressure to create precise profiles.
+  </p>
+</div>
+
+
+
             <div className="w-full h-px bg-blue-600 mt-6 sm:mt-8"></div>
           </div>
 
           {/* Steps */}
           <div className="space-y-10 sm:space-y-12 md:space-y-16">
-            {/* Step 1 */}
-            <div className="flex flex-col sm:flex-row items-center justify-between">
-              <div className="flex flex-col sm:flex-row gap-6 sm:gap-8 md:gap-12 max-w-full sm:max-w-2xl items-start text-center sm:text-left">
-                <h3 className="text-xl sm:text-2xl font-bold text-blue-600 mb-2 sm:mb-4 min-w-max">
-                  STEP 1
-                </h3>
-                <p className="text-gray-700 text-base sm:text-xl leading-relaxed max-w-xl">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                  aliquam aliquam nisi nisi, eu imperdiet ex ullamcorper eu.
-                </p>
-              </div>
-              <div className="flex-shrink-0 mt-6 sm:mt-0 sm:ml-8">
-                {/* Step 1 Icon - Circular process with arrows */}
-                <div className="relative w-24 h-24 sm:w-28 sm:h-28 md:w-32 md:h-32">
-                  <div className="absolute inset-0 border-3 sm:border-4 border-blue-600 rounded-full"></div>
-                  <div className="absolute inset-3 sm:inset-4 bg-blue-600 rounded-full"></div>
-                  {/* Arrows around circle */}
-                  <div className="absolute -top-1 sm:-top-2 left-1/2 transform -translate-x-1/2">
-                    <div className="w-0 h-0 border-l-3 border-r-3 border-b-5 border-transparent border-b-blue-600"></div>
-                  </div>
-                  <div className="absolute -bottom-1 sm:-bottom-2 left-1/2 transform -translate-x-1/2 rotate-180">
-                    <div className="w-0 h-0 border-l-3 border-r-3 border-b-5 border-transparent border-b-blue-600"></div>
-                  </div>
-                  <div className="absolute -left-1 sm:-left-2 top-1/2 transform -translate-y-1/2 -rotate-90">
-                    <div className="w-0 h-0 border-l-3 border-r-3 border-b-5 border-transparent border-b-blue-600"></div>
-                  </div>
-                  <div className="absolute -right-1 sm:-right-2 top-1/2 transform -translate-y-1/2 rotate-90">
-                    <div className="w-0 h-0 border-l-3 border-r-3 border-b-5 border-transparent border-b-blue-600"></div>
-                  </div>
-                </div>
-              </div>
-            </div>
+            {/* Step 1 - Heating */}
+            <Step
+              number={1}
+              title="Heating"
+              description="Heating the aluminum billets to the required temperature to prepare for extrusion."
+              icon={
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth={2}
+                  stroke="currentColor"
+                  className="w-16 h-16 text-orange-500"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M12 2C10 5 7 7 7 11a5 5 0 0010 0c0-4-3-6-5-9z"
+                  />
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M12 14v7" />
+                </svg>
+              }
+            />
 
-            <div className="w-full h-px bg-gray-300"></div>
+            {/* Step 2 - Extrusion */}
+            <Step
+              number={2}
+              title="Extrusion"
+              description="Pushing heated aluminum through a shaped die to form desired profiles."
+              icon={
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth={2}
+                  stroke="currentColor"
+                  className="w-16 h-16 text-blue-600"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M3 12h18M12 3l9 9-9 9"
+                  />
+                </svg>
+              }
+            />
 
-            {/* Step 2 */}
-            <div className="flex flex-col sm:flex-row items-center justify-between">
-              <div className="flex flex-col sm:flex-row gap-6 sm:gap-8 md:gap-12 max-w-full sm:max-w-2xl items-start text-center sm:text-left">
-                <h3 className="text-xl sm:text-2xl font-bold text-blue-600 mb-2 sm:mb-4 min-w-max">
-                  STEP 2
-                </h3>
-                <p className="text-gray-700 text-base sm:text-xl leading-relaxed max-w-xl">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit,
-                  aliquam aliquam nisi nisi, eu imperdiet ex ullamcorper eu.
-                </p>
-              </div>
-              <div className="flex-shrink-0 mt-6 sm:mt-0 sm:ml-8">
-                {/* Step 2 Icon - Geometric shape */}
-                <div className="relative w-24 h-18 sm:w-28 sm:h-20 md:w-32 md:h-24">
-                  <div className="absolute inset-0 bg-blue-600 transform skew-y-6 rotate-6 sm:skew-y-12 sm:rotate-12 rounded"></div>
-                  <div className="absolute top-1 left-1 right-2 bottom-2 sm:top-2 sm:left-2 sm:right-4 sm:bottom-4 bg-blue-500 transform skew-y-3 rotate-3 sm:skew-y-6 sm:rotate-6 rounded"></div>
-                  <div className="absolute top-2 left-2 right-4 bottom-4 sm:top-4 sm:left-4 sm:right-8 sm:bottom-8 bg-blue-400 transform skew-y-1 rotate-1 sm:skew-y-3 sm:rotate-3 rounded"></div>
-                </div>
-              </div>
-            </div>
+            {/* Step 3 - Cooling */}
+            <Step
+              number={3}
+              title="Cooling"
+              description="Cooling the extruded aluminum to solidify the shape."
+              icon={
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth={2}
+                  stroke="currentColor"
+                  className="w-16 h-16 text-sky-400"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M12 2v20m8-10H4"
+                  />
+                </svg>
+              }
+            />
 
-            <div className="w-full h-px bg-gray-300"></div>
+            {/* Step 4 - Cutting */}
+            <Step
+              number={4}
+              title="Cutting"
+              description="Cutting the extruded profiles to required lengths for further processing."
+              icon={
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth={2}
+                  stroke="currentColor"
+                  className="w-16 h-16 text-gray-700"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M18.364 5.636a9 9 0 01-12.728 0M12 12l9 9M12 12L3 21"
+                  />
+                </svg>
+              }
+            />
+
+            {/* Step 5 - Aging */}
+            <Step
+              number={5}
+              title="Aging"
+              description="Heat treating the cut profiles to increase strength and durability."
+              icon={
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth={2}
+                  stroke="currentColor"
+                  className="w-16 h-16 text-red-500"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M17 9V7a5 5 0 00-10 0v2M5 13h14l-1 7H6l-1-7z"
+                  />
+                </svg>
+              }
+            />
+
+            {/* Step 6 - Surface Treatment */}
+            <Step
+              number={6}
+              title="Surface Treatment"
+              description="Applying coatings or finishing to enhance appearance and resistance."
+              icon={
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth={2}
+                  stroke="currentColor"
+                  className="w-16 h-16 text-green-600"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M12 3v18m9-9H3"
+                  />
+                </svg>
+              }
+            />
+
+            {/* Step 7 - Inspection */}
+            <Step
+              number={7}
+              title="Inspection"
+              description="Final inspection ensuring quality standards are met before shipment."
+              icon={
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  strokeWidth={2}
+                  stroke="currentColor"
+                  className="w-16 h-16 text-teal-600"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    d="M5 13l4 4L19 7"
+                  />
+                </svg>
+              }
+            />
           </div>
         </div>
       </section>
-    </div>
+    </>
   );
 };
+
+// Step Component for reuse
+const Step = ({ number, title, description, icon }) => (
+  <div className="flex flex-col sm:flex-row items-center justify-between">
+    <div className="flex flex-col sm:flex-row gap-6 sm:gap-8 md:gap-12 max-w-full sm:max-w-2xl items-start text-center sm:text-left">
+      <h3 className="text-xl sm:text-2xl font-bold text-blue-600 mb-2 sm:mb-4 min-w-max">
+        STEP {number}
+      </h3>
+      <p className="text-gray-700 text-base sm:text-xl leading-relaxed max-w-xl">
+        {title}
+      </p>
+    </div>
+    <div className="flex-shrink-0 mt-6 sm:mt-0 sm:ml-8">{icon}</div>
+  </div>
+);
 
 export default InfrastructurePlant;

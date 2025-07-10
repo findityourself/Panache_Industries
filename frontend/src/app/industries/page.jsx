@@ -66,9 +66,7 @@ const IndustriesPage = () => {
             INDUSTRIES WE SERVE
           </h1>
           <p className="text-base sm:text-lg text-white/90 max-w-xl md:max-w-2xl text-center px-2">
-            Serving diverse industries with innovative solutions and
-            unparalleled expertise across multiple sectors, delivering
-            excellence in every project we undertake.
+            Aluminum is light yet strong, stylish yet sustainable — ideal for all sectors.
           </p>
         </div>
       </div>
