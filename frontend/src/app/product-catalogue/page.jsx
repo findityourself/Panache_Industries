@@ -6,101 +6,84 @@ import { useRouter } from "next/navigation";
 const products = [
   {
     id: 1,
-    name: "Industrial Furnace Model A1",
-    description:
-      "High-efficiency industrial furnace for heavy-duty applications",
+    name: "Aluminum Windows Series",
+    description: "High-quality aluminum windows for modern buildings",
     image: "/p1.jpg",
-    price: "$12,500",
+    price: "From $450",
     fullDescription:
-      "Lorem Dolor Sit Amet, Consectetur adipiscing elit. Aliquam aliquam nisi nisi, eu imperdiet ex ullamcorper eu.",
+      "Our aluminum windows combine durability with sleek design, offering excellent thermal performance and weather resistance. Available in various styles and finishes.",
     specifications: [
-      "2 x Top Anchor",
-      "2 x Light Tube Rod 400mm",
-      "1 x Direct Light Tube 900mm",
-      "1 x Suspension Rod 600mm",
-      "1 x Suspension Panel 600mm",
+      "Material: High-grade aluminum",
+      "Finish: Powder-coated, various colors",
+      "Glass: Double/triple glazing options",
+      "Security: Multi-point locking system",
+      "Warranty: 10 years"
     ],
   },
   {
     id: 2,
-    name: "Precision Welding Equipment",
-    description: "Professional welding equipment for industrial use",
+    name: "Premium Door Systems",
+    description: "Secure and stylish aluminum door solutions",
     image: "/p2.jpg",
-    price: "$8,750",
+    price: "From $850",
     fullDescription:
-      "Professional grade welding equipment designed for industrial applications with advanced safety features.",
+      "Our aluminum doors provide superior security and insulation while maintaining elegant aesthetics. Suitable for both residential and commercial applications.",
     specifications: [
-      "1 x Welding Unit",
-      "1 x Power Cable 5m",
-      "2 x Electrode Holders",
-      "1 x Ground Clamp",
-      "1 x Safety Mask",
+      "Material: Reinforced aluminum",
+      "Types: Sliding, folding, hinged options",
+      "Finish: Anodized or powder-coated",
+      "Security: High-grade locking mechanisms",
+      "Customization: Various sizes and designs"
     ],
   },
   {
     id: 3,
-    name: "Safety Gear Pro Series",
-    description: "Complete safety equipment for industrial workers",
+    name: "Architectural Railings",
+    description: "Modern safety and decorative railing systems",
     image: "/p3.jpg",
-    price: "$450",
+    price: "From $120 per meter",
     fullDescription:
-      "Comprehensive safety equipment package for industrial workplace protection and compliance.",
+      "Our aluminum railings combine safety with architectural beauty, perfect for balconies, staircases, and terraces. Custom designs available.",
     specifications: [
-      "1 x Safety Helmet",
-      "1 x High-Vis Vest",
-      "1 x Safety Goggles",
-      "1 x Work Gloves",
-      "1 x Safety Boots",
+      "Material: Marine-grade aluminum",
+      "Styles: Glass, horizontal, vertical",
+      "Finish: Brushed, powder-coated",
+      "Installation: Wall or floor mounted",
+      "Maintenance: Virtually maintenance-free"
     ],
   },
   {
     id: 4,
-    name: "Heavy Duty Crane System",
-    description: "Industrial crane system for heavy lifting operations",
+    name: "Structural Aluminum Profiles",
+    description: "Industrial-strength aluminum framing systems",
     image: "/p4.jpg",
-    price: "$35,000",
+    price: "From $25 per meter",
     fullDescription:
-      "Heavy-duty crane system for industrial lifting operations with advanced control systems.",
+      "Structural aluminum profiles for construction and industrial applications. Lightweight yet strong, corrosion-resistant framing solutions.",
     specifications: [
-      "1 x Main Crane Unit",
-      "1 x Control Panel",
-      "2 x Support Beams",
-      "1 x Lifting Hook Assembly",
-      "1 x Remote Control",
+      "Material: 6000-series aluminum",
+      "Types: T-slot, angle, channel, I-beam",
+      "Finish: Mill, anodized, or powder-coated",
+      "Applications: Frames, supports, enclosures",
+      "Custom: Cutting and machining available"
     ],
   },
   {
     id: 5,
-    name: "Automated Assembly Line",
-    description: "Complete automated assembly line solution",
+    name: "Curtain Wall Systems",
+    description: "Energy-efficient building facades",
     image: "/p5.jpg",
-    price: "$125,000",
+    price: "From $150 per sqm",
     fullDescription:
-      "Complete automated assembly line solution for manufacturing processes with high efficiency.",
+      "Advanced curtain wall systems that enhance building aesthetics while improving energy efficiency. Custom designs for any architectural vision.",
     specifications: [
-      "3 x Conveyor Sections",
-      "2 x Robotic Arms",
-      "1 x Control System",
-      "4 x Sensors",
-      "1 x Quality Control Unit",
+      "System: Unitized or stick-built",
+      "Glazing: Thermal break technology",
+      "Performance: Weather and impact resistant",
+      "Design: Custom shapes and configurations",
+      "Sustainability: Recyclable materials"
     ],
-  },
-  {
-    id: 6,
-    name: "Quality Control System",
-    description: "Advanced quality control and testing equipment",
-    image: "/p6.jpg",
-    price: "$15,500",
-    fullDescription:
-      "Advanced quality control and testing equipment for precise measurement and analysis.",
-    specifications: [
-      "1 x Testing Unit",
-      "1 x Measurement Tools",
-      "1 x Data Logger",
-      "2 x Calibration Standards",
-      "1 x Software Package",
-    ],
-  },
+  }
 ];
 
 const ProductCatalogPage = () => {
@@ -154,11 +137,10 @@ const ProductCatalogPage = () => {
       >
         <div className="max-w-6xl mx-auto px-4 text-center text-white relative z-10">
           <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight uppercase tracking-wider">
-            PRODUCT CATALOGUE
+            ALUMINUM PRODUCTS
           </h1>
           <p className="text-lg md:text-xl mb-12 max-w-3xl mx-auto leading-relaxed">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-            aliquam nisi nisi, eu imperdiet ex ullamcorper eu.
+            Premium aluminum solutions for construction and architecture. Explore our range of windows, doors, railings, structural profiles, and curtain walls.
           </p>
           {/* Search Bar */}
           <div className="max-w-2xl mx-auto relative">
@@ -183,12 +165,13 @@ const ProductCatalogPage = () => {
           <div className="flex flex-col lg:flex-row justify-between items-start mb-12">
             <div>
               <h2 className="text-4xl font-bold text-gray-800 mb-4 uppercase tracking-wider">
-                PRODUCT GALLERY
+                PRODUCT CATEGORIES
               </h2>
-              <p className="text-gray-600 text-lg max-w-md leading-relaxed">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-                aliquam nisi nisi.
-              </p>
+              <p className="text-gray-600 text-lg max-w-md leading-relaxed whitespace-nowrap xl:whitespace-normal">
+  Browse our premium aluminum products designed for durability, aesthetics, and performance.
+</p>
+
+
             </div>
             <button
               onClick={handleDownloadCatalog}
@@ -196,7 +179,7 @@ const ProductCatalogPage = () => {
               aria-label="Download product catalogue"
             >
               <Download className="w-5 h-5" />
-              DOWNLOAD PRODUCT CATALOGUE
+              DOWNLOAD CATALOGUE
             </button>
           </div>
 

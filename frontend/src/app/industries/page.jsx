@@ -47,6 +47,23 @@ const IndustriesPage = () => {
       icon: <Cog className="w-6 h-6 sm:w-8 sm:h-8" />,
       image: "/p2.jpg",
     },
+    // Added cards below
+    {
+      title: "LUXURY\nHOMES",
+      desc: "Premium aluminum designs elevating aesthetics and functionality in luxury residences.",
+      bg: "bg-rose-500",
+      textColor: "text-white",
+      icon: <Building className="w-6 h-6 sm:w-8 sm:h-8" />,
+      image: "/h2.jpg",
+    },
+    {
+      title: "RETAIL\n& \nHOSPITALITY",
+      desc: "Stylish and durable aluminum solutions designed for retail and hospitality environments.",
+      bg: "bg-teal-600",
+      textColor: "text-white",
+      icon: <Lightbulb className="w-6 h-6 sm:w-8 sm:h-8" />,
+      image: "/h1.jpg",
+    },
   ];
 
   return (
@@ -72,91 +89,91 @@ const IndustriesPage = () => {
       </div>
 
       {/* WHO WE WORK WITH Section */}
-      <div className="py-16 sm:py-20 md:py-24 bg-[#F7F3ED]">
-        <div className="container mx-auto px-4 sm:px-6">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-medium text-center mb-10 sm:mb-12 md:mb-16 text-[#0365E7]">
-            WHO WE WORK WITH
-          </h2>
+<div className="py-16 sm:py-20 md:py-24 bg-[#F7F3ED]">
+  <div className="container mx-auto px-4 sm:px-6">
+    <h2 className="text-3xl sm:text-4xl md:text-5xl font-medium text-center mb-10 sm:mb-12 md:mb-16 text-[#0365E7]">
+      WHO WE WORK WITH
+    </h2>
 
-          {/* Industry Cards Grid */}
-          <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-center items-center gap-4 sm:gap-6">
-            {industryCards.map((card, index) => (
-              <div
-                key={index}
-                className={`relative rounded-xl sm:rounded-2xl overflow-hidden cursor-pointer transition-all duration-500 ease-in-out
-                  ${
-                    index === activeCard
-                      ? "w-full md:w-[480px] lg:w-[600px]"
-                      : "w-full md:w-32 lg:w-44"
-                  }
-                  h-[300px] sm:h-[400px] md:h-[500px] group
-                `}
-                onClick={() => setActiveCard(index)}
-              >
-                {/* Background Image */}
-                <div className="absolute inset-0">
-                  <img
-                    src={card.image}
-                    alt={card.title}
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-
-                {/* Color Overlay */}
-                <div
-                  className={`absolute inset-0 ${card.bg} ${
-                    index === activeCard ? "opacity-35" : "opacity-40"
-                  } transition-opacity duration-500`}
-                ></div>
-
-                {/* Content */}
-                <div
-                  className={`relative z-10 p-4 sm:p-6 h-full flex flex-col ${card.textColor}`}
-                >
-                  {/* Icon */}
-                  <div className="mb-3 sm:mb-4">{card.icon}</div>
-
-                  {/* Title - Always visible */}
-                  <h3
-                    className={`font-bold leading-tight whitespace-pre-line transition-all duration-500
-                    ${
-                      index === activeCard
-                        ? "text-xl sm:text-2xl mb-4 sm:mb-6"
-                        : "text-sm sm:text-base mb-2 transform rotate-0"
-                    }
-                  `}
-                  >
-                    {card.title}
-                  </h3>
-
-                  {/* Description - Only visible when active */}
-                  {index === activeCard && (
-                    <div className="animate-fadeIn flex-grow flex flex-col justify-center">
-                      <p className="text-sm sm:text-base leading-relaxed opacity-90">
-                        {card.desc}
-                      </p>
-                    </div>
-                  )}
-
-                  {/* Vertical title for inactive cards on larger screens */}
-                  {index !== activeCard && (
-                    <div className="hidden md:flex flex-grow items-center justify-center">
-                      <div className="transform -rotate-90 whitespace-nowrap">
-                        <span className="text-xs sm:text-sm font-semibold tracking-wider">
-                          {card.title.replace("\n", " ")}
-                        </span>
-                      </div>
-                    </div>
-                  )}
-                </div>
-
-                {/* Hover Effect */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-              </div>
-            ))}
+    {/* Horizontal scroll container */}
+    <div className="max-w-7xl mx-auto flex flex-row flex-nowrap justify-start items-center gap-4 sm:gap-6 overflow-x-auto px-2">
+      {industryCards.map((card, index) => (
+        <div
+          key={index}
+          className={`relative rounded-xl sm:rounded-2xl overflow-hidden cursor-pointer transition-all duration-500 ease-in-out
+            ${
+              index === activeCard
+                ? "w-[480px] lg:w-[600px]"
+                : "w-32 lg:w-44"
+            }
+            h-[300px] sm:h-[400px] md:h-[500px] flex-shrink-0 group
+          `}
+          onClick={() => setActiveCard(index)}
+        >
+          {/* Background Image */}
+          <div className="absolute inset-0">
+            <img
+              src={card.image}
+              alt={card.title}
+              className="w-full h-full object-cover"
+            />
           </div>
+
+          {/* Color Overlay */}
+          <div
+            className={`absolute inset-0 ${card.bg} ${
+              index === activeCard ? "opacity-35" : "opacity-40"
+            } transition-opacity duration-500`}
+          ></div>
+
+          {/* Content */}
+          <div
+            className={`relative z-10 p-4 sm:p-6 h-full flex flex-col ${card.textColor}`}
+          >
+            {/* Icon */}
+            <div className="mb-3 sm:mb-4">{card.icon}</div>
+
+            {/* Title */}
+            <h3
+              className={`font-bold leading-tight whitespace-pre-line transition-all duration-500
+              ${
+                index === activeCard
+                  ? "text-xl sm:text-2xl mb-4 sm:mb-6"
+                  : "text-sm sm:text-base mb-2 transform rotate-0"
+              }
+            `}
+            >
+              {card.title}
+            </h3>
+
+            {/* Description for active */}
+            {index === activeCard && (
+              <div className="animate-fadeIn flex-grow flex flex-col justify-center">
+                <p className="text-sm sm:text-base leading-relaxed opacity-90">
+                  {card.desc}
+                </p>
+              </div>
+            )}
+
+            {/* Vertical title for inactive cards on larger screens */}
+            {index !== activeCard && (
+              <div className="hidden md:flex flex-grow items-center justify-center">
+                <div className="transform -rotate-90 whitespace-nowrap">
+                  <span className="text-xs sm:text-sm font-semibold tracking-wider">
+                    {card.title.replace("\n", " ")}
+                  </span>
+                </div>
+              </div>
+            )}
+          </div>
+
+          {/* Hover Effect */}
+          <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
         </div>
-      </div>
+      ))}
+    </div>
+  </div>
+</div>
 
       {/* Case Studies Section */}
       <div className="py-16 sm:py-20 md:py-24 bg-[#FFFDF9]">
