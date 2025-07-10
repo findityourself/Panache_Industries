@@ -19,7 +19,7 @@
     "url": "https://github.com/harshvi-dagli/panache/issues"
   },
   "homepage": "https://github.com/harshvi-dagli/panache#readme",
-  "dependencies": {
+  "devDependencies": {
     "concurrently": "^9.2.0"
   }
 }
