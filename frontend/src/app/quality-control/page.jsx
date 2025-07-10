@@ -1,5 +1,5 @@
 import React from "react";
-import { Award } from "lucide-react";
+import { Recycle } from "lucide-react";
 
 export default function QualityControlPage() {
   return (
@@ -98,7 +98,7 @@ export default function QualityControlPage() {
               <div className="w-12 h-12 sm:w-16 sm:h-16 mb-3 sm:mb-4">
                 <div className="w-full h-full border-2 border-orange-500 rounded flex items-center justify-center relative">
                   <div className="w-6 h-6 sm:w-8 sm:h-8 bg-orange-500 rounded-sm flex items-center justify-center">
-                    <Award className="w-3 h-3 sm:w-4 sm:h-4 text-white" />
+                    <Recycle className="w-3 h-3 sm:w-4 sm:h-4 text-white" />
                   </div>
                   <div className="absolute -bottom-1 -right-1 w-3 h-5 sm:w-4 sm:h-6 bg-orange-500 transform rotate-12"></div>
                 </div>
@@ -117,7 +117,7 @@ export default function QualityControlPage() {
               <div className="w-12 h-12 sm:w-16 sm:h-16 mb-3 sm:mb-4">
                 <div className="w-full h-full border-2 border-orange-500 rounded flex items-center justify-center relative">
                   <div className="w-6 h-6 sm:w-8 sm:h-8 bg-orange-500 rounded-sm flex items-center justify-center">
-                    <Award className="w-3 h-3 sm:w-4 sm:h-4 text-white" />
+                    <Recycle className="w-3 h-3 sm:w-4 sm:h-4 text-white" />
                   </div>
                   <div className="absolute -bottom-1 -right-1 w-3 h-5 sm:w-4 sm:h-6 bg-orange-500 transform rotate-12"></div>
                 </div>
@@ -136,7 +136,7 @@ export default function QualityControlPage() {
               <div className="w-12 h-12 sm:w-16 sm:h-16 mb-3 sm:mb-4">
                 <div className="w-full h-full border-2 border-orange-500 rounded flex items-center justify-center relative">
                   <div className="w-6 h-6 sm:w-8 sm:h-8 bg-orange-500 rounded-sm flex items-center justify-center">
-                    <Award className="w-3 h-3 sm:w-4 sm:h-4 text-white" />
+                    <Recycle className="w-3 h-3 sm:w-4 sm:h-4 text-white" />
                   </div>
                   <div className="absolute -bottom-1 -right-1 w-3 h-5 sm:w-4 sm:h-6 bg-orange-500 transform rotate-12"></div>
                 </div>

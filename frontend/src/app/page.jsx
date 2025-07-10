@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import { Settings, Award, Heart, Phone, Mail, MapPin } from "lucide-react";
+import { Settings, Recycle, Anvil,Truck , Phone, Mail, MapPin } from "lucide-react";
 
 const MainContent = () => {
   const [formData, setFormData] = useState({
@@ -46,12 +46,11 @@ const MainContent = () => {
 
         <div className="container mx-auto text-center text-white relative z-10 max-w-7xl">
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-6 sm:mb-8 leading-tight drop-shadow-lg px-4">
-            TAGLINE/HEADING
+            BOLD IN BUILD<br />
+             BRILLIANT IN VISION
           </h1>
           <p className="text-base sm:text-lg md:text-xl lg:text-2xl mb-8 sm:mb-12 max-w-4xl mx-auto leading-relaxed font-light drop-shadow-md px-4">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-            aliquam nisi nisi, eu imperdiet ex ullamcorper eu. Pellentesque quis
-            turpis cursus,
+            Welcome to Panache Aluminum — your partner in precision-engineered aluminum systems for modern architecture.
           </p>
         </div>
       </section>
@@ -69,9 +68,7 @@ const MainContent = () => {
                 SHORT INTRO
               </h2>
               <p className="text-gray-700 leading-relaxed text-base sm:text-lg">
-                Since 1920, we've been at the forefront of industrial
-                innovation, delivering cutting-edge furnace solutions that power
-                manufacturing excellence across diverse industries worldwide.
+               Panache Aluminum is a forward-thinking manufacturer delivering premium-quality aluminum doors, windows, railings, and façade solutions.
               </p>
             </div>
             {/* Logo Placeholder */}
@@ -104,11 +101,11 @@ const MainContent = () => {
               {/* Blue Stats Card */}
               <div className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow">
                 <div className="mb-4">
-                  <h3 className="text-3xl font-bold text-blue-600">500K+</h3>
-                  <h4 className="text-xl font-bold text-blue-600 uppercase">FURNACES</h4>
+                  <h3 className="text-xl font-bold uppercase">Advanced Extrusion Technology</h3>
+                  <h4 className="text-xl font-bold text-blue-600 "></h4>
                 </div>
-                <p className="text-blue-400 text-sm">
-                  Industrial furnaces delivered worldwide with cutting-edge efficiency and reliability standards.
+                <p className="text-xs mt-1">
+                  Our PLC-controlled extrusion lines deliver precise, versatile aluminum profiles from 5mm to 200mm.
                 </p>
               </div>
 
@@ -120,9 +117,9 @@ const MainContent = () => {
                   className="absolute inset-0 w-full h-full object-cover opacity-30"
                 />
                 <div className="relative text-white">
-                  <h3 className="text-xl font-bold">25+</h3>
-                  <h4 className="text-sm font-bold uppercase">COUNTRIES</h4>
-                  <p className="text-xs mt-1">Global reach, local expertise</p>
+                  <h3 className="text-l font-bold">In-House Fabrication & Finishing</h3>
+                  <h4 className="text-sm font-bold "></h4>
+                  <p className="text-xs mt-1">Our in-house fabrication and finishing deliver high-quality, precise aluminum profiles with full control over every step.</p>
                 </div>
               </div>
 
@@ -143,10 +140,12 @@ const MainContent = () => {
                   className="absolute inset-0 w-full h-full object-cover opacity-30"
                 />
                 <div className="relative text-white">
-                  <h3 className="text-xl font-bold">99.9%</h3>
-                  <h4 className="text-sm font-bold uppercase">UPTIME</h4>
+                  <h3 className="text-l font-bold uppercase">Precision Machinery: Presses, Furnaces, Aging Ovens</h3>
+                  <h4 className="text-sm font-bold ">
+                    
+                  </h4>
                   <p className="text-xs mt-1">
-                    Reliability that keeps your operations running smoothly.
+                   Advanced machinery ensures precision and durability in every profile.
                   </p>
                 </div>
               </div>
@@ -154,11 +153,11 @@ const MainContent = () => {
               {/* Since 1920 Card */}
               <div className="bg-blue-600 text-white rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow">
                 <div className="mb-4">
-                  <p className="text-sm uppercase font-bold">Since</p>
-                  <p className="text-4xl font-bold">1920</p>
+                  <p className="text-xl font-bold uppercase">Custom Profiles, Modular Systems, Thermal Breaks</p>
+                  <p className=""></p>
                 </div>
-                <p className="text-sm">
-                  Over a century of innovation in industrial furnace technology, continuously evolving to meet the changing needs of modern manufacturing.
+                <p className="text-xs mt-1">
+                  We design custom profiles and modular systems with thermal breaks to enhance performance and energy efficiency.
                 </p>
               </div>
 
@@ -184,14 +183,13 @@ const MainContent = () => {
                 {/* Blue Card */}
                 <div className="bg-white rounded-xl p-6 shadow-md h-[250px] flex flex-col justify-between hover:shadow-lg transition-shadow">
                   <div>
-                    <h3 className="text-3xl font-bold text-blue-600">500K+</h3>
-                    <h4 className="text-xl font-bold text-blue-600 uppercase">
-                      FURNACES
+                    <h3 className="text-3xl font-bold text-blue-600 uppercase">Advanced Extrusion Technology</h3>
+                    <h4 className="text-xl font-bold text-blue-600">
+                     
                     </h4>
                   </div>
                   <p className="text-blue-400 text-sm">
-                    Industrial furnaces delivered worldwide with cutting-edge
-                    efficiency and reliability standards.
+                    Our PLC-controlled extrusion lines deliver precise, versatile aluminum profiles from 5mm to 200mm.
                   </p>
                 </div>
                 {/* Bottom Left Industrial Image */}
@@ -214,10 +212,10 @@ const MainContent = () => {
                     className="absolute inset-0 w-full h-full object-cover opacity-30"
                   />
                   <div className="relative text-white">
-                    <h3 className="text-xl font-bold">25+</h3>
-                    <h4 className="text-sm font-bold uppercase">COUNTRIES</h4>
+                    <h3 className="text-l font-bold uppercase">In-House Fabrication & Finishing</h3>
+                    <h4 className="text-sm font-bold"></h4>
                     <p className="text-xs mt-1">
-                      Global reach, local expertise
+                      Our in-house fabrication and finishing deliver high-quality, precise aluminum profiles with full control over every step.
                     </p>
                   </div>
                 </div>
@@ -239,10 +237,10 @@ const MainContent = () => {
                     className="absolute inset-0 w-full h-full object-cover opacity-30"
                   />
                   <div className="relative text-white">
-                    <h3 className="text-xl font-bold">99.9%</h3>
-                    <h4 className="text-sm font-bold uppercase">UPTIME</h4>
+                    <h3 className="text-l font-bold uppercase">Precision Machinery: Presses, Furnaces, Aging Ovens</h3>
+                    <h4 className="text-sm font-bold "></h4>
                     <p className="text-xs mt-1">
-                      Reliability that keeps your operations running smoothly.
+                      Advanced machinery ensures precision and durability in every profile.
                     </p>
                   </div>
                 </div>
@@ -253,15 +251,17 @@ const MainContent = () => {
                 {/* Blue Card */}
                 <div className="bg-blue-600 text-white rounded-xl p-6 shadow-md h-[350px] flex flex-col justify-between hover:shadow-lg transition-shadow">
                   <div>
-                    <p className="text-sm uppercase font-bold">Since</p>
-                    <p className="text-4xl font-bold mb-4">1920</p>
-                  </div>
-                  <p className="text-sm">
-                    Over a century of innovation in industrial furnace
-                    technology, continuously evolving to meet the changing needs
-                    of modern manufacturing.
-                  </p>
+
+          
+                  <p className="text-2xl uppercase font-bold">Custom Profiles, Modular Systems, Thermal Breaks</p>
+                  <p className="text-4xl font-bold"></p>
                 </div>
+                <p className="text-sm">
+                  We design custom profiles and modular systems with thermal breaks to enhance performance and energy efficiency.
+                </p>
+              </div>
+
+
 
                 {/* Orange Gear Card */}
                 <div className="bg-orange-500 rounded-xl flex items-center justify-center shadow-md h-[120px] hover:shadow-lg hover:bg-orange-600 transition-all cursor-pointer">
@@ -274,71 +274,84 @@ const MainContent = () => {
       </section>
 
       {/* Why Choose Us */}
-      <section
-        className="py-12 sm:py-16 lg:py-20 relative px-4 sm:px-6"
-        style={{ backgroundColor: "#FFFDF9" }}
-      >
-        {/* Subtle top gradient for smooth transition */}
-        <div
-          className="absolute top-0 left-0 right-0 h-20"
-          style={{
-            background: `linear-gradient(180deg, #f9f2eb 0%, rgba(249, 242, 235, 0.5) 50%, transparent 100%)`,
-          }}
-        ></div>
+<section
+  className="py-12 sm:py-16 lg:py-20 relative px-4 sm:px-6"
+  style={{ backgroundColor: "#FFFDF9" }}
+>
+  {/* Subtle top gradient for smooth transition */}
+  <div
+    className="absolute top-0 left-0 right-0 h-20"
+    style={{
+      background: `linear-gradient(180deg, #f9f2eb 0%, rgba(249, 242, 235, 0.5) 50%, transparent 100%)`,
+    }}
+  ></div>
 
-        <div className="container mx-auto max-w-7xl relative z-10">
-          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-center text-gray-800 mb-4 sm:mb-6 uppercase tracking-wider">
-            WHY CHOOSE US?
-          </h2>
-          <p className="text-center text-gray-600 mb-8 sm:mb-12 lg:mb-16 max-w-3xl mx-auto text-base sm:text-lg leading-relaxed px-4">
-            Our commitment to excellence, innovation, and sustainability has
-            made us the trusted partner for industrial leaders worldwide,
-            delivering solutions that exceed expectations.
-          </p>
+  <div className="container mx-auto max-w-7xl relative z-10">
+    <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-center text-gray-800 mb-4 sm:mb-6 uppercase tracking-wider">
+      WHY CHOOSE US?
+    </h2>
+    <p className="text-center text-gray-600 mb-8 sm:mb-12 lg:mb-16 max-w-3xl mx-auto text-base sm:text-lg leading-relaxed px-4">
+      Our commitment to excellence, innovation, and sustainability has
+      made us the trusted partner for industrial leaders worldwide,
+      delivering solutions that exceed expectations.
+    </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 sm:gap-12 max-w-5xl mx-auto">
-            <div className="text-center group">
-              <div className="w-16 h-16 sm:w-20 sm:h-20 bg-gradient-to-br from-orange-500 to-red-500 rounded-full flex items-center justify-center mx-auto mb-4 sm:mb-6 shadow-lg group-hover:shadow-xl transition-all group-hover:scale-110">
-                <Heart className="w-8 h-8 sm:w-10 sm:h-10 text-white" />
-              </div>
-              <h3 className="text-lg sm:text-xl font-bold text-gray-800 mb-3 sm:mb-4 uppercase tracking-wide">
-                SUSTAINABILITY
-              </h3>
-              <p className="text-gray-600 leading-relaxed text-sm sm:text-base">
-                Environmental responsibility through energy-efficient designs
-                and sustainable manufacturing processes that reduce carbon
-                footprint.
-              </p>
-            </div>
-
-            <div className="text-center group">
-              <div className="w-16 h-16 sm:w-20 sm:h-20 bg-gradient-to-br from-orange-500 to-red-500 rounded-full flex items-center justify-center mx-auto mb-4 sm:mb-6 shadow-lg group-hover:shadow-xl transition-all group-hover:scale-110">
-                <Settings className="w-8 h-8 sm:w-10 sm:h-10 text-white" />
-              </div>
-              <h3 className="text-lg sm:text-xl font-bold text-gray-800 mb-3 sm:mb-4 uppercase tracking-wide">
-                CUSTOMIZATION
-              </h3>
-              <p className="text-gray-600 leading-relaxed text-sm sm:text-base">
-                Tailored solutions designed to meet your specific operational
-                requirements with precision engineering and innovative design.
-              </p>
-            </div>
-
-            <div className="text-center group">
-              <div className="w-16 h-16 sm:w-20 sm:h-20 bg-gradient-to-br from-orange-500 to-red-500 rounded-full flex items-center justify-center mx-auto mb-4 sm:mb-6 shadow-lg group-hover:shadow-xl transition-all group-hover:scale-110">
-                <Award className="w-8 h-8 sm:w-10 sm:h-10 text-white" />
-              </div>
-              <h3 className="text-lg sm:text-xl font-bold text-gray-800 mb-3 sm:mb-4 uppercase tracking-wide">
-                QUALITY
-              </h3>
-              <p className="text-gray-600 leading-relaxed text-sm sm:text-base">
-                Uncompromising quality standards backed by rigorous testing and
-                continuous improvement in every aspect of our operations.
-              </p>
-            </div>
-          </div>
+    <div className="grid grid-cols-1 md:grid-cols-4 gap-8 sm:gap-12 max-w-6xl mx-auto">
+      {/* High-strength alloys & sleek aesthetics */}
+      <div className="text-center group">
+        <div className="w-16 h-16 sm:w-20 sm:h-20 bg-gradient-to-br from-orange-500 to-red-500 rounded-full flex items-center justify-center mx-auto mb-4 sm:mb-6 shadow-lg group-hover:shadow-xl transition-all group-hover:scale-110">
+          <Anvil className="w-8 h-8 sm:w-10 sm:h-10 text-white" />
         </div>
-      </section>
+        <h3 className="text-lg sm:text-xl font-bold text-gray-800 mb-3 sm:mb-4 uppercase tracking-wide">
+          HIGH-STRENGTH ALLOYS
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-sm sm:text-base">
+          Crafted from premium-grade billets to deliver superior strength and sleek finishes that elevate modern design aesthetics.
+        </p>
+      </div>
+
+      {/* Tailored design solutions */}
+      <div className="text-center group">
+        <div className="w-16 h-16 sm:w-20 sm:h-20 bg-gradient-to-br from-orange-500 to-red-500 rounded-full flex items-center justify-center mx-auto mb-4 sm:mb-6 shadow-lg group-hover:shadow-xl transition-all group-hover:scale-110">
+          <Settings className="w-8 h-8 sm:w-10 sm:h-10 text-white" />
+        </div>
+        <h3 className="text-lg sm:text-xl font-bold text-gray-800 mb-3 sm:mb-4 uppercase tracking-wide">
+          TAILORED DESIGN SOLUTIONS
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-sm sm:text-base">
+          Customized profiles designed precisely to your operational needs with innovative engineering.
+        </p>
+      </div>
+
+      {/* Sustainable & recyclable production */}
+      <div className="text-center group">
+        <div className="w-16 h-16 sm:w-20 sm:h-20 bg-gradient-to-br from-orange-500 to-red-500 rounded-full flex items-center justify-center mx-auto mb-4 sm:mb-6 shadow-lg group-hover:shadow-xl transition-all group-hover:scale-110">
+          <Recycle className="w-8 h-8 sm:w-10 sm:h-10 text-white" />
+        </div>
+        <h3 className="text-lg sm:text-xl font-bold text-gray-800 mb-3 sm:mb-4 uppercase tracking-wide">
+          SUSTAINABLE & RECYCLABLE PRODUCTION
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-sm sm:text-base">
+          Energy-efficient manufacturing with fully recyclable aluminum, reducing environmental impact.
+        </p>
+      </div>
+
+      {/* On-time delivery, every time */}
+      <div className="text-center group">
+        <div className="w-16 h-16 sm:w-20 sm:h-20 bg-gradient-to-br from-orange-500 to-red-500 rounded-full flex items-center justify-center mx-auto mb-4 sm:mb-6 shadow-lg group-hover:shadow-xl transition-all group-hover:scale-110">
+          <Truck className="w-8 h-8 sm:w-10 sm:h-10 text-white" />
+        </div>
+        <h3 className="text-lg sm:text-xl font-bold text-gray-800 mb-3 sm:mb-4 uppercase tracking-wide">
+          ON-TIME DELIVERY
+        </h3>
+        <p className="text-gray-600 leading-relaxed text-sm sm:text-base">
+          Streamlined production and logistics ensure your orders arrive promptly without compromise.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
 
       {/* Contact Form Section */}
       <div className="py-12 sm:py-16 lg:py-20 bg-[#F7F3ED] px-4 sm:px-6">
