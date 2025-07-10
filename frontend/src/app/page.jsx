@@ -273,7 +273,49 @@ const MainContent = () => {
         </div>
       </section>
 
-      {/* Why Choose Us */}
+      
+      {/* Sectors We Serve Section */}
+<section
+  className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6"
+  style={{ backgroundColor: "#F7F3ED" }}
+>
+  <div className="container mx-auto max-w-7xl text-center">
+    <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-6 uppercase tracking-wide">
+      SECTORS WE SERVE
+    </h2>
+    <p className="text-gray-700 text-lg sm:text-xl font-light max-w-4xl mx-auto leading-relaxed flex flex-wrap justify-center gap-x-2 gap-y-2 select-none">
+      {[
+        "Residential",
+        "Commercial",
+        "Hospitality",
+        "Retail",
+        "Industrial",
+        "Infrastructure",
+      ].map((sector, idx) => (
+        <React.Fragment key={sector}>
+          <span
+            className="cursor-pointer px-3 py-1 transition-transform duration-300 ease-in-out rounded-md
+                       text-gray-700 hover:text-blue-600 hover:scale-110 hover:shadow-lg inline-block"
+          >
+            {sector}
+          </span>
+          {idx !== 5 && (
+            <span
+              className="text-blue-600 mx-1 cursor-default select-none inline-block"
+              aria-hidden="true"
+            >
+              |
+            </span>
+          )}
+        </React.Fragment>
+      ))}
+    </p>
+  </div>
+</section>
+
+
+{/* Why Choose Us Section */}
+
 <section
   className="py-12 sm:py-16 lg:py-20 relative px-4 sm:px-6"
   style={{ backgroundColor: "#FFFDF9" }}
@@ -351,6 +393,9 @@ const MainContent = () => {
     </div>
   </div>
 </section>
+
+
+
 
 
       {/* Contact Form Section */}

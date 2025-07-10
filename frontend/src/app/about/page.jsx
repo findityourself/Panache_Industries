@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 
 const AboutPage = () => {
-  const [openValue, setOpenValue] = useState("Core Value 1");
+  const [openValue, setOpenValue] = useState(null); // No open value initially
 
   const handleValueClick = (value) => {
     if (openValue === value) {
@@ -14,26 +14,22 @@ const AboutPage = () => {
     }
   };
 
+  // Updated values array
   const values = [
     {
-      title: "Core Value 1",
+      title: "Sustainability",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit aliquam aliquam nisi nisi, eu imperdiet ex ullamcorper eu.",
+        "We are committed to sustainable practices that minimize environmental impact and promote resource efficiency.",
     },
     {
-      title: "Core Value 2",
+      title: "Leadership",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit aliquam aliquam nisi nisi, eu imperdiet ex ullamcorper eu.",
+        "Our leadership drives innovation and inspires excellence in everything we do.",
     },
     {
-      title: "Core Value 3",
+      title: "Excellence",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit aliquam aliquam nisi nisi, eu imperdiet ex ullamcorper eu.",
-    },
-    {
-      title: "Core Value 4",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit aliquam aliquam nisi nisi, eu imperdiet ex ullamcorper eu.",
+        "We strive for excellence by delivering high-quality solutions and exceeding customer expectations.",
     },
   ];
 
@@ -53,9 +49,7 @@ const AboutPage = () => {
             ABOUT US
           </h1>
           <p className="text-base sm:text-lg md:text-xl text-white/90 max-w-xl md:max-w-2xl text-center px-2">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-            aliquam nisi nisi, eu imperdiet ex ullamcorper eu. Pellentesque quis
-            turpis cursus.
+            Panache Aluminum was founded with a clear vision — to revolutionize aluminum systems through innovation, craftsmanship, and sustainability.
           </p>
         </div>
       </div>
@@ -214,8 +208,7 @@ const AboutPage = () => {
                 </svg>
               </div>
               <p className="font-serif text-base sm:text-lg text-gray-500 max-w-xs sm:max-w-md mx-auto leading-snug">
-                lorem ipsum dolor sit amet, consectetur adipiscing elit. aliquam
-                aliquam nisi nisi, eu imperdiet ex ullamcorper eu.
+                To empower architects and builders with next-generation aluminum systems.
               </p>
             </div>
 
@@ -251,8 +244,7 @@ const AboutPage = () => {
                 </svg>
               </div>
               <p className="font-serif text-base sm:text-lg text-gray-500 max-w-xs sm:max-w-md mx-auto leading-snug">
-                lorem ipsum dolor sit amet, consectetur adipiscing elit. aliquam
-                aliquam nisi nisi, eu imperdiet ex ullamcorper eu.
+                To be India's most trusted name in aluminum innovation.
               </p>
             </div>
           </div>
@@ -260,64 +252,64 @@ const AboutPage = () => {
       </div>
 
       {/* Our Values Section */}
-      <div className="py-12 sm:py-16 md:py-20 bg-[#F7F3ED]">
-        <div className="container mx-auto px-4 sm:px-6">
-          <div className="max-w-xl md:max-w-3xl lg:max-w-6xl mx-auto">
-            <h2 className="text-4xl sm:text-5xl md:text-6xl font-medium text-blue-600 mb-3 sm:mb-4">
-              OUR VALUES
-            </h2>
-            <p className="text-base sm:text-lg text-gray-600 mb-8 sm:mb-12">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit aliquam
-              aliquam nisi nisi, eu imperdiet ex ullamcorper eu.
-            </p>
+<div className="py-12 sm:py-16 md:py-20 bg-[#F7F3ED]">
+  <div className="container mx-auto px-4 sm:px-6">
+    <div className="max-w-xl md:max-w-3xl lg:max-w-6xl mx-auto">
+      <h2 className="text-4xl sm:text-5xl md:text-6xl font-medium text-blue-600 mb-3 sm:mb-4">
+        OUR VALUES
+      </h2>
+      <p className="text-base sm:text-lg text-gray-600 mb-8 sm:mb-12">
+        Sustainability, Leadership, and Excellence guide our commitment to delivering superior solutions while respecting the environment and inspiring our teams.
+      </p>
 
-            <div className="flex flex-col md:flex-row gap-8 md:gap-12 lg:gap-16 items-center md:items-start">
-              {/* Left side - Logo */}
-              <div className="w-48 sm:w-64 md:w-[280px] lg:w-[343px] flex-shrink-0">
-                <img
-                  src="/logo.png"
-                  alt="Company Logo"
-                  className="w-full h-auto"
-                />
-              </div>
+      <div className="flex flex-col md:flex-row gap-8 md:gap-12 lg:gap-16 items-center md:items-start">
+        {/* Left side - Logo */}
+        <div className="w-48 sm:w-64 md:w-[280px] lg:w-[343px] flex-shrink-0">
+          <img
+            src="/logo.png"
+            alt="Company Logo"
+            className="w-full h-auto"
+          />
+        </div>
 
-              {/* Right side - Values */}
-              <div className="flex-1 w-full">
-                <div className="space-y-2 sm:space-y-3">
-                  {values.map((value, index) => (
-                    <div key={index} className="border-b border-gray-300">
-                      <button
-                        onClick={() => handleValueClick(value.title)}
-                        className="w-full py-2 sm:py-3 flex items-center justify-between text-left group"
-                      >
-                        <span className="text-gray-800 font-[600] text-lg sm:text-xl md:text-2xl">
-                          {value.title}
-                        </span>
-                        <span className="text-gray-400 text-lg sm:text-xl">
-                          {openValue === value.title ? "×" : "+"}
-                        </span>
-                      </button>
-                      <div
-                        className={`grid transition-all duration-200 ease-in-out ${
-                          openValue === value.title
-                            ? "grid-rows-[1fr] opacity-100"
-                            : "grid-rows-[0fr] opacity-0"
-                        }`}
-                      >
-                        <div className="overflow-hidden">
-                          <p className="pb-2 sm:pb-3 text-gray-600 text-sm sm:text-base">
-                            {value.description}
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  ))}
+        {/* Right side - Values */}
+        <div className="flex-1 w-full">
+          <div className="space-y-2 sm:space-y-3">
+            {values.map((value, index) => (
+              <div key={index} className="border-b border-gray-300">
+                <button
+                  onClick={() => handleValueClick(value.title)}
+                  className="w-full py-2 sm:py-3 flex items-center justify-between text-left group"
+                >
+                  <span className="text-gray-800 font-[600] text-lg sm:text-xl md:text-2xl">
+                    {value.title}
+                  </span>
+                  <span className="text-gray-400 text-lg sm:text-xl">
+                    {openValue === value.title ? "×" : "+"}
+                  </span>
+                </button>
+                <div
+                  className={`grid transition-all duration-200 ease-in-out ${
+                    openValue === value.title
+                      ? "grid-rows-[1fr] opacity-100"
+                      : "grid-rows-[0fr] opacity-0"
+                  }`}
+                >
+                  <div className="overflow-hidden">
+                    <p className="pb-2 sm:pb-3 text-gray-600 text-sm sm:text-base">
+                      {value.description}
+                    </p>
+                  </div>
                 </div>
               </div>
-            </div>
+            ))}
           </div>
         </div>
       </div>
+    </div>
+  </div>
+</div>
+
 
       {/* What We Offer Section */}
       <div className="py-12 sm:py-16 md:py-20 bg-[#F7F3ED]">
