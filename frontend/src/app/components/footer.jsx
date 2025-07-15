@@ -2,7 +2,7 @@
 
 import React from "react";
 import Link from "next/link";
-import { Facebook, Linkedin, Twitter, Instagram } from "lucide-react";
+import { Facebook, Linkedin, Twitter, Instagram, Mail } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -50,6 +50,7 @@ const Footer = () => {
                 { path: "/", label: "Home" },
                 { path: "/about", label: "About Us" },
                 { path: "/product-catalogue", label: "Our Products" },
+                { path: "/our-process", label: "Our Process" },
                 { path: "/contact", label: "Contact Us" },
               ].map((item) => (
                 <li key={item.path}>
@@ -96,6 +97,12 @@ const Footer = () => {
                   color: "hover:text-blue-700",
                   href: "https://linkedin.com/",
                 },
+                {
+                  icon: Mail,
+                  label: "Email Us: panachealuminium@gmail.com",
+                  color: "hover:text-red-500",
+                  href: "mailto:panachealuminium@gmail.com",
+                },
               ].map(({ icon: Icon, label, color, href }) => (
                 <a
                   key={label}
@@ -120,11 +127,10 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Copyright Section */}
+        {/* Copyright */}
         <div className="mt-8 sm:mt-12 pt-6 sm:pt-8 border-t border-gray-200/30 text-center">
           <p className="text-xs sm:text-sm text-gray-600">
-            © {new Date().getFullYear()} Palanche Industries. All rights
-            reserved.
+            © {new Date().getFullYear()} Palanche Industries. All rights reserved.
           </p>
         </div>
       </div>

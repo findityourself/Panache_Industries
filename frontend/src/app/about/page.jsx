@@ -404,58 +404,7 @@ const AboutPage = () => {
         </div>
       </div>
 
-      {/* Our Locations Section */}
-      <div className="py-12 sm:py-16 md:py-20 bg-[#F7F3ED]">
-        <div className="container mx-auto px-4 sm:px-6 max-w-xl md:max-w-3xl lg:max-w-6xl">
-          <div className="relative mb-8 sm:mb-12">
-            <img
-              src="/contact.jpg"
-              alt="Our Locations"
-              className="w-full h-[250px] sm:h-[300px] md:h-[400px] object-cover"
-            />
-            <div className="absolute inset-0 bg-black/30 flex items-center justify-start p-6 sm:p-8 md:p-12">
-              <h2 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white leading-tight sm:leading-none">
-                OUR
-                <br />
-                LOCATIONS
-              </h2>
-            </div>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-y-8 md:gap-x-6 lg:gap-x-8">
-            <div className="md:border-r md:border-gray-300 md:pr-6 lg:pr-8">
-              <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-3 sm:mb-4">
-                Office 1
-              </h3>
-              <p className="text-gray-700 leading-relaxed text-sm sm:text-base">
-                lorem ipsum dolor sit amet, consectetur adipiscing elit. aliquam
-                aliquam nisi nisi, eu imperdiet ex ullamcorper eu. pellentesque
-                quis turpis cursus.
-              </p>
-            </div>
-            <div className="md:border-r md:border-gray-300 md:pl-6 md:pr-6 lg:pl-8 lg:pr-8">
-              <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-3 sm:mb-4">
-                Office 2
-              </h3>
-              <p className="text-gray-700 leading-relaxed text-sm sm:text-base">
-                lorem ipsum dolor sit amet, consectetur adipiscing elit. aliquam
-                aliquam nisi nisi, eu imperdiet ex ullamcorper eu. pellentesque
-                quis turpis cursus.
-              </p>
-            </div>
-            <div className="md:pl-6 lg:pl-8">
-              <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-3 sm:mb-4">
-                Plant 1
-              </h3>
-              <p className="text-gray-700 leading-relaxed text-sm sm:text-base">
-                lorem ipsum dolor sit amet, consectetur adipiscing elit. aliquam
-                aliquam nisi nisi, eu imperdiet ex ullamcorper eu. pellentesque
-                quis turpis cursus.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
+      
 
       {/* Reach Out To Us Section */}
       <div className="py-12 sm:py-16 md:py-20 bg-[#F7F3ED]">

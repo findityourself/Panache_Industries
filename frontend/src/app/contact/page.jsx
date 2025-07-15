@@ -26,10 +26,9 @@ const ContactPage = () => {
             CONTACT US
           </h1>
           <p className="text-base sm:text-lg text-white/90 max-w-xl md:max-w-2xl text-center px-2">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-            aliquam nisi nisi, eu imperdiet ex ullamcorper eu. Pellentesque quis
-            turpis cursus.
-          </p>
+  <a href="tel:9820016325" className="hover:underline">9820016325</a> | <a href="tel:7400029977" className="hover:underline">7400029977</a>
+</p>
+
         </div>
       </div>
 
@@ -129,9 +128,7 @@ const ContactPage = () => {
                 Office 1
               </h3>
               <p className="text-gray-700 leading-relaxed text-sm sm:text-base">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-                aliquam nisi nisi, eu imperdiet ex ullamcorper eu. Pellentesque
-                quis turpis cursus.
+                Survey# 187, Plot#1, Shivajinagar Road, Taluka Khandala, District Satara, Ahire, Maharashtra 412802, India
               </p>
             </div>
             {/* Office 2 */}

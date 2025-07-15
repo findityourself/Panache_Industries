@@ -76,9 +76,7 @@ const Header = () => {
 
             {/* Desktop Navigation */}
             <nav className="hidden md:flex items-center space-x-1 lg:space-x-2 relative z-10">
-              {[
-                { path: "/", label: "Home" },
-              ].map((item) => (
+              {[{ path: "/", label: "Home" }].map((item) => (
                 <Link
                   key={item.path}
                   href={item.path}
@@ -149,10 +147,50 @@ const Header = () => {
                 </div>
               </div>
 
-              {[
-                { path: "/product-catalogue", label: "Our Products" },
-                { path: "/contact", label: "Contact Us" },
-              ].map((item) => (
+              {[{ path: "/product-catalogue", label: "Our Products" }].map(
+                (item) => (
+                  <Link
+                    key={item.path}
+                    href={item.path}
+                    className={`relative px-2 lg:px-4 py-2 rounded-xl text-sm lg:text-base font-medium transition-all duration-300 group ${
+                      isActive(item.path)
+                        ? "text-white"
+                        : "text-gray-700 hover:text-black"
+                    }`}
+                  >
+                    <span className="relative z-10">{item.label}</span>
+                    <div
+                      className={`absolute inset-0 rounded-xl transition-all duration-300 ${
+                        isActive(item.path)
+                          ? "bg-blue-500/20 backdrop-blur-sm shadow-lg"
+                          : "bg-transparent group-hover:bg-white/30 group-hover:backdrop-blur-sm group-hover:shadow-md"
+                      }`}
+                    ></div>
+                  </Link>
+                )
+              )}
+
+              {/* Added Our Process here */}
+              <Link
+                href="/our-process"
+                className={`relative px-2 lg:px-4 py-2 rounded-xl text-sm lg:text-base font-medium transition-all duration-300 group ${
+                  isActive("/our-process")
+                    ? "text-white"
+                    : "text-gray-700 hover:text-black"
+                }`}
+              >
+                <span className="relative z-10">Our Process</span>
+                <div
+                  className={`absolute inset-0 rounded-xl transition-all duration-300 ${
+                    isActive("/our-process")
+                      ? "bg-blue-500/20 backdrop-blur-sm shadow-lg"
+                      : "bg-transparent group-hover:bg-white/30 group-hover:backdrop-blur-sm group-hover:shadow-md"
+                  }`}
+                ></div>
+              </Link>
+
+              {/* Contact Us */}
+              {[{ path: "/contact", label: "Contact Us" }].map((item) => (
                 <Link
                   key={item.path}
                   href={item.path}
@@ -191,11 +229,13 @@ const Header = () => {
       </div>
 
       {/* Mobile Navigation */}
-      <div className={`md:hidden transition-all duration-300 ease-in-out ${
-        isMenuOpen 
-          ? 'opacity-100 visible transform translate-y-0' 
-          : 'opacity-0 invisible transform -translate-y-2'
-      }`}>
+      <div
+        className={`md:hidden transition-all duration-300 ease-in-out ${
+          isMenuOpen
+            ? "opacity-100 visible transform translate-y-0"
+            : "opacity-0 invisible transform -translate-y-2"
+        }`}
+      >
         <div className="mt-2 mx-2 sm:mx-4 relative z-[9998]">
           <div className="backdrop-blur-xl bg-white/25 border border-white/30 rounded-2xl shadow-2xl shadow-blue-500/20 overflow-hidden">
             <div className="absolute inset-0 bg-gradient-to-br from-white/30 via-transparent to-transparent pointer-events-none"></div>
@@ -258,6 +298,19 @@ const Header = () => {
                 }`}
               >
                 Our Products
+              </Link>
+
+              {/* Added Our Process here */}
+              <Link
+                href="/our-process"
+                onClick={handleMobileNav}
+                className={`px-3 sm:px-4 py-2 sm:py-3 rounded-xl text-sm font-medium transition-all duration-300 hover:bg-white/40 hover:backdrop-blur-sm ${
+                  isActive("/our-process")
+                    ? "text-white bg-blue-500/20"
+                    : "text-gray-700 hover:text-black"
+                }`}
+              >
+                Our Process
               </Link>
 
               <Link
