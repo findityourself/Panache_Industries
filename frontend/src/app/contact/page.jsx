@@ -18,17 +18,13 @@ const ContactPage = () => {
             alt="Contact Us Background"
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-black/30"></div>{" "}
+          <div className="absolute inset-0 bg-black/30"></div>
           {/* Dark overlay for text readability */}
         </div>
         <div className="relative z-10 container mx-auto px-4 sm:px-6 flex flex-col items-center">
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-4 sm:mb-6 text-center">
             CONTACT US
           </h1>
-          <p className="text-base sm:text-lg text-white/90 max-w-xl md:max-w-2xl text-center px-2">
-  <a href="tel:9820016325" className="hover:underline">9820016325</a> | <a href="tel:7400029977" className="hover:underline">7400029977</a>
-</p>
-
         </div>
       </div>
 
@@ -38,10 +34,16 @@ const ContactPage = () => {
           <h2 className="text-3xl sm:text-4xl font-bold text-center text-blue-600 mb-10 sm:mb-12">
             REACH OUT TO US
           </h2>
-          <form onSubmit={handleSubmit} className="grid grid-cols-1 sm:grid-cols-4 gap-y-5 sm:gap-y-4 items-center">
+          <form
+            onSubmit={handleSubmit}
+            className="grid grid-cols-1 sm:grid-cols-4 gap-y-5 sm:gap-y-4 items-center"
+          >
             {/* Name Input */}
             <div className="sm:col-span-1 text-left sm:text-right sm:pr-8">
-              <label htmlFor="name" className="text-gray-700 font-medium text-sm sm:text-base">
+              <label
+                htmlFor="name"
+                className="text-gray-700 font-medium text-sm sm:text-base"
+              >
                 NAME
               </label>
             </div>
@@ -57,7 +59,10 @@ const ContactPage = () => {
 
             {/* Email Input */}
             <div className="sm:col-span-1 text-left sm:text-right sm:pr-8">
-              <label htmlFor="email" className="text-gray-700 font-medium text-sm sm:text-base">
+              <label
+                htmlFor="email"
+                className="text-gray-700 font-medium text-sm sm:text-base"
+              >
                 EMAIL
               </label>
             </div>
@@ -73,7 +78,10 @@ const ContactPage = () => {
 
             {/* Number Input */}
             <div className="sm:col-span-1 text-left sm:text-right sm:pr-8">
-              <label htmlFor="number" className="text-gray-700 font-medium text-sm sm:text-base">
+              <label
+                htmlFor="number"
+                className="text-gray-700 font-medium text-sm sm:text-base"
+              >
                 NUMBER
               </label>
             </div>
@@ -89,7 +97,10 @@ const ContactPage = () => {
 
             {/* Message Textarea */}
             <div className="sm:col-span-1 text-left sm:text-right sm:pr-8">
-              <label htmlFor="message" className="text-gray-700 font-medium text-sm sm:text-base">
+              <label
+                htmlFor="message"
+                className="text-gray-700 font-medium text-sm sm:text-base"
+              >
                 MESSAGE
               </label>
             </div>
@@ -121,17 +132,18 @@ const ContactPage = () => {
           <h2 className="text-4xl sm:text-5xl md:text-6xl font-medium text-center text-gray-900 mb-10 sm:mb-12">
             OUR LOCATIONS
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-0 max-w-5xl mx-auto rounded-lg overflow-hidden border md:border-0 border-gray-300">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-0 max-w-5xl mx-auto rounded-lg overflow-hidden border md:border-0 border-gray-300">
             {/* Office 1 */}
             <div className="p-6 sm:p-8 md:border-r md:border-gray-600 bg-white md:bg-transparent rounded-lg md:rounded-none shadow-sm md:shadow-none">
               <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-3 sm:mb-4">
-                Office 1
+                Office
               </h3>
               <p className="text-gray-700 leading-relaxed text-sm sm:text-base">
-                Survey# 187, Plot#1, Shivajinagar Road, Taluka Khandala, District Satara, Ahire, Maharashtra 412802, India
+                Survey 187, Plot 1, Shivajinagar Road, Taluka Khandala, District
+                Satara, Ahire, Maharashtra 412802, India
               </p>
             </div>
-            {/* Office 2 */}
+            {/* Office 2 
             <div className="p-6 sm:p-8 md:border-r md:border-gray-600 bg-white md:bg-transparent rounded-lg md:rounded-none shadow-sm md:shadow-none">
               <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-3 sm:mb-4">
                 Office 2
@@ -141,7 +153,8 @@ const ContactPage = () => {
                 aliquam nisi nisi, eu imperdiet ex ullamcorper eu. Pellentesque
                 quis turpis cursus.
               </p>
-            </div>
+            </div>*/}
+
             {/* Plant 1 */}
             <div className="p-6 sm:p-8 bg-white md:bg-transparent rounded-lg md:rounded-none shadow-sm md:shadow-none">
               <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-3 sm:mb-4">
@@ -152,6 +165,26 @@ const ContactPage = () => {
                 aliquam nisi nisi, eu imperdiet ex ullamcorper eu. Pellentesque
                 quis turpis cursus.
               </p>
+            </div>
+          </div>
+
+          {/* Embedded Google Map */}
+          <div className="mt-12">
+            <h3 className="text-2xl sm:text-3xl font-semibold text-center text-gray-800 mb-6">
+              Find Us on Map
+            </h3>
+            <div className="w-full h-[300px] sm:h-[400px] rounded-lg overflow-hidden shadow-md">
+              <iframe
+                title="Panache Location Map"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3540.8519830254218!2d74.06150550516674!3d18.06630149865904!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bc257165be80b89%3A0xf2b77cc05f5ae9c3!2sPanache%20Aluminium%20Extrusions%20Pvt%20Ltd.!5e0!3m2!1sen!2sin!4v1752595098363!5m2!1sen!2sin
+"
+                width="100%"
+                height="100%"
+                style={{ border: 0 }}
+                allowFullScreen=""
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+              ></iframe>
             </div>
           </div>
         </div>
