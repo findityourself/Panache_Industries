@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import { Settings, Recycle, Anvil,Truck , Phone, Mail, MapPin } from "lucide-react";
+import { Settings, Recycle, Anvil, Truck } from "lucide-react";
 
 const MainContent = () => {
   const [formData, setFormData] = useState({
@@ -46,11 +46,13 @@ const MainContent = () => {
 
         <div className="container mx-auto text-center text-white relative z-10 max-w-7xl">
           <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-6 sm:mb-8 leading-tight drop-shadow-lg px-4">
-            BOLD IN BUILD<br />
-             BRILLIANT IN VISION
+            BOLD IN BUILD
+            <br />
+            BRILLIANT IN VISION
           </h1>
           <p className="text-base sm:text-lg md:text-xl lg:text-2xl mb-8 sm:mb-12 max-w-4xl mx-auto leading-relaxed font-light drop-shadow-md px-4">
-            Welcome to Panache Aluminum — your partner in precision-engineered aluminum systems for modern architecture.
+            Welcome to Panache Aluminum — your partner in precision-engineered
+            aluminum systems for modern architecture.
           </p>
         </div>
       </section>
@@ -68,7 +70,9 @@ const MainContent = () => {
                 SHORT INTRO
               </h2>
               <p className="text-gray-700 leading-relaxed text-base sm:text-lg">
-               Panache Aluminum is a forward-thinking manufacturer delivering premium-quality aluminum doors, windows, railings, and façade solutions.
+                Panache Aluminum is a forward-thinking manufacturer delivering
+                premium-quality aluminum doors, windows, railings, and façade
+                solutions.
               </p>
             </div>
             {/* Logo Placeholder */}
@@ -77,6 +81,7 @@ const MainContent = () => {
                 src="/logo.png"
                 alt="Company Logo"
                 className="w-full max-w-[300px] sm:max-w-[400px] lg:max-w-[433px] h-auto object-contain"
+                style={{ borderRadius: 0 }}
               />
             </div>
           </div>
@@ -84,7 +89,10 @@ const MainContent = () => {
       </section>
 
       {/* Our Capabilities Section */}
-      <section className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6" style={{ backgroundColor: "#F7F3ED" }}>
+      <section
+        className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6"
+        style={{ backgroundColor: "#F7F3ED" }}
+      >
         <div className="container mx-auto max-w-7xl">
           <div className="max-w-6xl mx-auto">
             <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-center text-blue-600 mb-4 sm:mb-6 uppercase tracking-wider">
@@ -95,83 +103,99 @@ const MainContent = () => {
               technology, sustainable manufacturing processes, and custom
               engineering solutions tailored to your specific requirements.
             </p>
-            
+
             {/* Mobile: Vertical Stack */}
             <div className="block lg:hidden space-y-6">
               {/* Blue Stats Card */}
-              <div className="bg-white rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow">
+              <div className="bg-white p-6 shadow-md hover:shadow-lg transition-shadow rounded-none">
                 <div className="mb-4">
-                  <h3 className="text-xl font-bold uppercase">Advanced Extrusion Technology</h3>
+                  <h3 className="text-xl font-bold uppercase">
+                    Advanced Extrusion Technology
+                  </h3>
                   <h4 className="text-xl font-bold text-blue-600 "></h4>
                 </div>
                 <p className="text-xs mt-1">
-                  Our PLC-controlled extrusion lines deliver precise, versatile aluminum profiles from 5mm to 200mm.
+                  Our PLC-controlled extrusion lines deliver precise, versatile
+                  aluminum profiles from 5mm to 200mm.
                 </p>
               </div>
 
               {/* Countries Card */}
-              <div className="relative bg-black rounded-xl p-6 shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+              <div className="relative bg-black p-6 shadow-md overflow-hidden hover:shadow-lg transition-shadow rounded-none">
                 <img
                   src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
                   alt="BW"
                   className="absolute inset-0 w-full h-full object-cover opacity-30"
+                  style={{ borderRadius: 0 }}
                 />
                 <div className="relative text-white">
-                  <h3 className="text-l font-bold">In-House Fabrication & Finishing</h3>
+                  <h3 className="text-l font-bold">
+                    In-House Fabrication & Finishing
+                  </h3>
                   <h4 className="text-sm font-bold "></h4>
-                  <p className="text-xs mt-1">Our in-house fabrication and finishing deliver high-quality, precise aluminum profiles with full control over every step.</p>
+                  <p className="text-xs mt-1">
+                    Our in-house fabrication and finishing deliver high-quality,
+                    precise aluminum profiles with full control over every step.
+                  </p>
                 </div>
               </div>
 
               {/* Main Industrial Image */}
-              <div className="rounded-xl overflow-hidden shadow-md h-48 hover:shadow-lg transition-shadow">
+              <div className="overflow-hidden shadow-md h-48 hover:shadow-lg transition-shadow rounded-none">
                 <img
                   src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
                   alt="Industrial Color"
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                  style={{ borderRadius: 0 }}
                 />
               </div>
 
               {/* Uptime Card */}
-              <div className="relative bg-black rounded-xl p-6 shadow-md overflow-hidden hover:shadow-lg transition-shadow">
+              <div className="relative bg-black p-6 shadow-md overflow-hidden hover:shadow-lg transition-shadow rounded-none">
                 <img
                   src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
                   alt="BW2"
                   className="absolute inset-0 w-full h-full object-cover opacity-30"
+                  style={{ borderRadius: 0 }}
                 />
                 <div className="relative text-white">
-                  <h3 className="text-l font-bold uppercase">Precision Machinery: Presses, Furnaces, Aging Ovens</h3>
-                  <h4 className="text-sm font-bold ">
-                    
-                  </h4>
+                  <h3 className="text-l font-bold uppercase">
+                    Precision Machinery: Presses, Furnaces, Aging Ovens
+                  </h3>
+                  <h4 className="text-sm font-bold "></h4>
                   <p className="text-xs mt-1">
-                   Advanced machinery ensures precision and durability in every profile.
+                    Advanced machinery ensures precision and durability in every
+                    profile.
                   </p>
                 </div>
               </div>
 
               {/* Since 1920 Card */}
-              <div className="bg-blue-600 text-white rounded-xl p-6 shadow-md hover:shadow-lg transition-shadow">
+              <div className="bg-blue-600 text-white p-6 shadow-md hover:shadow-lg transition-shadow rounded-none">
                 <div className="mb-4">
-                  <p className="text-xl font-bold uppercase">Custom Profiles, Modular Systems, Thermal Breaks</p>
+                  <p className="text-xl font-bold uppercase">
+                    Custom Profiles, Modular Systems, Thermal Breaks
+                  </p>
                   <p className=""></p>
                 </div>
                 <p className="text-xs mt-1">
-                  We design custom profiles and modular systems with thermal breaks to enhance performance and energy efficiency.
+                  We design custom profiles and modular systems with thermal
+                  breaks to enhance performance and energy efficiency.
                 </p>
               </div>
 
               {/* Additional Industrial Image */}
-              <div className="rounded-xl overflow-hidden shadow-md h-48 hover:shadow-lg transition-shadow">
+              <div className="overflow-hidden shadow-md h-48 hover:shadow-lg transition-shadow rounded-none">
                 <img
                   src="https://images.unsplash.com/photo-1587293852726-70cdb56c2866?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
                   alt="industrial"
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                  style={{ borderRadius: 0 }}
                 />
               </div>
 
               {/* Settings Icon Card */}
-              <div className="bg-orange-500 rounded-xl flex items-center justify-center shadow-md h-20 hover:shadow-lg hover:bg-orange-600 transition-all cursor-pointer">
+              <div className="bg-orange-500 flex items-center justify-center shadow-md h-20 hover:shadow-lg hover:bg-orange-600 transition-all cursor-pointer rounded-none">
                 <Settings className="text-white w-8 h-8" />
               </div>
             </div>
@@ -181,23 +205,25 @@ const MainContent = () => {
               {/* Left Column */}
               <div className="flex flex-col gap-6 w-[30%]">
                 {/* Blue Card */}
-                <div className="bg-white rounded-xl p-6 shadow-md h-[250px] flex flex-col justify-between hover:shadow-lg transition-shadow">
+                <div className="bg-white p-6 shadow-md h-[250px] flex flex-col justify-between hover:shadow-lg transition-shadow rounded-none">
                   <div>
-                    <h3 className="text-3xl font-bold text-blue-600 uppercase">Advanced Extrusion Technology</h3>
-                    <h4 className="text-xl font-bold text-blue-600">
-                     
-                    </h4>
+                    <h3 className="text-3xl font-bold text-blue-600 uppercase">
+                      Advanced Extrusion Technology
+                    </h3>
+                    <h4 className="text-xl font-bold text-blue-600"></h4>
                   </div>
                   <p className="text-blue-400 text-sm">
-                    Our PLC-controlled extrusion lines deliver precise, versatile aluminum profiles from 5mm to 200mm.
+                    Our PLC-controlled extrusion lines deliver precise,
+                    versatile aluminum profiles from 5mm to 200mm.
                   </p>
                 </div>
                 {/* Bottom Left Industrial Image */}
-                <div className="rounded-xl overflow-hidden shadow-md h-[250px] hover:shadow-lg transition-shadow">
+                <div className="overflow-hidden shadow-md h-[250px] hover:shadow-lg transition-shadow rounded-none">
                   <img
                     src="https://images.unsplash.com/photo-1587293852726-70cdb56c2866?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
                     alt="industrial"
                     className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                    style={{ borderRadius: 0 }}
                   />
                 </div>
               </div>
@@ -205,42 +231,52 @@ const MainContent = () => {
               {/* Center Column */}
               <div className="flex flex-col gap-6 w-[35%]">
                 {/* Top B/W Text Card */}
-                <div className="relative bg-black rounded-xl p-6 shadow-md overflow-hidden h-[120px] hover:shadow-lg transition-shadow">
+                <div className="relative bg-black p-6 shadow-md overflow-hidden h-[120px] hover:shadow-lg transition-shadow rounded-none">
                   <img
                     src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
                     alt="BW"
                     className="absolute inset-0 w-full h-full object-cover opacity-30"
+                    style={{ borderRadius: 0 }}
                   />
                   <div className="relative text-white">
-                    <h3 className="text-l font-bold uppercase">In-House Fabrication & Finishing</h3>
+                    <h3 className="text-l font-bold uppercase">
+                      In-House Fabrication & Finishing
+                    </h3>
                     <h4 className="text-sm font-bold"></h4>
                     <p className="text-xs mt-1">
-                      Our in-house fabrication and finishing deliver high-quality, precise aluminum profiles with full control over every step.
+                      Our in-house fabrication and finishing deliver
+                      high-quality, precise aluminum profiles with full control
+                      over every step.
                     </p>
                   </div>
                 </div>
 
                 {/* Middle Full Color Image */}
-                <div className="rounded-xl overflow-hidden shadow-md h-[250px] hover:shadow-lg transition-shadow">
+                <div className="overflow-hidden shadow-md h-[250px] hover:shadow-lg transition-shadow rounded-none">
                   <img
                     src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
                     alt="Industrial Color"
                     className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                    style={{ borderRadius: 0 }}
                   />
                 </div>
 
                 {/* Bottom B/W Card */}
-                <div className="relative bg-black rounded-xl p-6 shadow-md overflow-hidden h-[120px] hover:shadow-lg transition-shadow">
+                <div className="relative bg-black p-6 shadow-md overflow-hidden h-[120px] hover:shadow-lg transition-shadow rounded-none">
                   <img
                     src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
                     alt="BW2"
                     className="absolute inset-0 w-full h-full object-cover opacity-30"
+                    style={{ borderRadius: 0 }}
                   />
                   <div className="relative text-white">
-                    <h3 className="text-l font-bold uppercase">Precision Machinery: Presses, Furnaces, Aging Ovens</h3>
+                    <h3 className="text-l font-bold uppercase">
+                      Precision Machinery: Presses, Furnaces, Aging Ovens
+                    </h3>
                     <h4 className="text-sm font-bold "></h4>
                     <p className="text-xs mt-1">
-                      Advanced machinery ensures precision and durability in every profile.
+                      Advanced machinery ensures precision and durability in
+                      every profile.
                     </p>
                   </div>
                 </div>
@@ -249,22 +285,21 @@ const MainContent = () => {
               {/* Right Column */}
               <div className="flex flex-col gap-6 w-[30%]">
                 {/* Blue Card */}
-                <div className="bg-blue-600 text-white rounded-xl p-6 shadow-md h-[350px] flex flex-col justify-between hover:shadow-lg transition-shadow">
+                <div className="bg-blue-600 text-white p-6 shadow-md h-[350px] flex flex-col justify-between hover:shadow-lg transition-shadow rounded-none">
                   <div>
-
-          
-                  <p className="text-2xl uppercase font-bold">Custom Profiles, Modular Systems, Thermal Breaks</p>
-                  <p className="text-4xl font-bold"></p>
+                    <p className="text-2xl uppercase font-bold">
+                      Custom Profiles, Modular Systems, Thermal Breaks
+                    </p>
+                    <p className="text-4xl font-bold"></p>
+                  </div>
+                  <p className="text-sm">
+                    We design custom profiles and modular systems with thermal
+                    breaks to enhance performance and energy efficiency.
+                  </p>
                 </div>
-                <p className="text-sm">
-                  We design custom profiles and modular systems with thermal breaks to enhance performance and energy efficiency.
-                </p>
-              </div>
-
-
 
                 {/* Orange Gear Card */}
-                <div className="bg-orange-500 rounded-xl flex items-center justify-center shadow-md h-[120px] hover:shadow-lg hover:bg-orange-600 transition-all cursor-pointer">
+                <div className="bg-orange-500 flex items-center justify-center shadow-md h-[120px] hover:shadow-lg hover:bg-orange-600 transition-all cursor-pointer rounded-none">
                   <Settings className="text-white w-10 h-10" />
                 </div>
               </div>
@@ -273,64 +308,62 @@ const MainContent = () => {
         </div>
       </section>
 
-      
       {/* Sectors We Serve Section */}
-<section
-  className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6"
-  style={{ backgroundColor: "#F7F3ED" }}
->
-  <div className="container mx-auto max-w-7xl text-center">
-    <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-6 uppercase tracking-wide">
-      SECTORS WE SERVE
-    </h2>
-    <p className="text-gray-700 text-lg sm:text-xl font-light max-w-4xl mx-auto leading-relaxed flex flex-wrap justify-center gap-x-2 gap-y-2 select-none">
-      {[
-        "Residential",
-        "Commercial",
-        "Hospitality",
-        "Retail",
-        "Industrial",
-        "Infrastructure",
-      ].map((sector, idx) => (
-        <React.Fragment key={sector}>
-          <span
-            className="cursor-pointer px-3 py-1 transition-transform duration-300 ease-in-out rounded-md
-                       text-gray-700 hover:text-blue-600 hover:scale-110 hover:shadow-lg inline-block"
-          >
-            {sector}
-          </span>
-          {idx !== 5 && (
-            <span
-              className="text-blue-600 mx-1 cursor-default select-none inline-block"
-              aria-hidden="true"
-            >
-              |
-            </span>
-          )}
-        </React.Fragment>
-      ))}
-    </p>
-  </div>
-</section>
+      <section
+        className="py-12 sm:py-16 lg:py-20 px-4 sm:px-6"
+        style={{ backgroundColor: "#F7F3ED" }}
+      >
+        <div className="container mx-auto max-w-7xl text-center">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-gray-900 mb-6 uppercase tracking-wide">
+            SECTORS WE SERVE
+          </h2>
+          <p className="text-gray-700 text-lg sm:text-xl font-light max-w-4xl mx-auto leading-relaxed flex flex-wrap justify-center gap-x-2 gap-y-2 select-none">
+            {[
+              "Residential",
+              "Commercial",
+              "Hospitality",
+              "Retail",
+              "Industrial",
+              "Infrastructure",
+            ].map((sector, idx) => (
+              <React.Fragment key={sector}>
+                <span
+                  className="cursor-pointer px-3 py-1 transition-transform duration-300 ease-in-out
+                    text-gray-700 hover:text-blue-600 hover:scale-110 hover:shadow-lg inline-block rounded-none"
+                >
+                  {sector}
+                </span>
+                {idx !== 5 && (
+                  <span
+                    className="text-blue-600 mx-1 cursor-default select-none inline-block"
+                    aria-hidden="true"
+                  >
+                    |
+                  </span>
+                )}
+              </React.Fragment>
+            ))}
+          </p>
+        </div>
+      </section>
 
+      {/* Why Choose Us Section */}
+      <section
+        className="py-12 sm:py-16 lg:py-20 relative px-4 sm:px-6"
+        style={{ backgroundColor: "#FFFDF9" }}
+      >
+        {/* Subtle top gradient for smooth transition */}
+        <div
+          className="absolute top-0 left-0 right-0 h-20"
+          style={{
+            background: `linear-gradient(180deg, #f9f2eb 0%, rgba(249, 242, 235, 0.5) 50%, transparent 100%)`,
+          }}
+        ></div>
 
-{/* Why Choose Us Section */}
-
-<section
-  className="py-12 sm:py-16 lg:py-20 relative px-4 sm:px-6"
-  style={{ backgroundColor: "#FFFDF9" }}
->
-  {/* Subtle top gradient for smooth transition */}
-  <div
-    className="absolute top-0 left-0 right-0 h-20"
-    style={{
-      background: `linear-gradient(180deg, #f9f2eb 0%, rgba(249, 242, 235, 0.5) 50%, transparent 100%)`,
-    }}
-  ></div>
-
-  <div className="container mx-auto max-w-7xl relative z-10">
-    <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-center text-gray-800 mb-4 sm:mb-6 uppercase tracking-wider">
-      WHY CHOOSE US?
+        <div className="container mx-auto max-w-7xl relative z-10">
+          <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold text-center text-gray-800 mb-4 sm:mb-6 uppercase tracking-wider">
+            WHY CHOOSE US?
+      
     </h2>
     <p className="text-center text-gray-600 mb-8 sm:mb-12 lg:mb-16 max-w-3xl mx-auto text-base sm:text-lg leading-relaxed px-4">
       Our commitment to excellence, innovation, and sustainability has

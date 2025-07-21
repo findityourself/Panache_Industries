@@ -16,13 +16,13 @@ const Footer = () => {
               <div className="relative">
                 <img
                   src="logo.png"
-                  alt="Palanche Industries Logo"
+                  alt="Panache Industries Logo"
                   className="h-8 sm:h-10 w-auto mr-3 sm:mr-4 transition-transform duration-300 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-blue-500/20 rounded-lg blur-xl scale-110 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
               </div>
               <h3 className="text-xl sm:text-2xl font-bold bg-gradient-to-r from-gray-800 to-blue-600 bg-clip-text text-transparent">
-                Palanche Industries
+                Panache Industries
               </h3>
             </div>
             <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
@@ -97,12 +97,6 @@ const Footer = () => {
                   color: "hover:text-blue-700",
                   href: "https://linkedin.com/",
                 },
-                {
-                  icon: Mail,
-                  label: "Email Us: panachealuminium@gmail.com",
-                  color: "hover:text-red-500",
-                  href: "mailto:panachealuminium@gmail.com",
-                },
               ].map(({ icon: Icon, label, color, href }) => (
                 <a
                   key={label}
@@ -123,6 +117,41 @@ const Footer = () => {
                   <span className="font-medium">{label}</span>
                 </a>
               ))}
+
+              {/* Email Dropdown */}
+              <div className="relative group">
+                <div className="flex items-center text-sm sm:text-base text-gray-600 hover:text-red-500 transition-all duration-300 hover:translate-x-2 cursor-pointer">
+                  <div className="relative mr-2 sm:mr-3">
+                    <Mail
+                      size={18}
+                      className="transition-transform duration-300 group-hover:scale-110"
+                    />
+                    <div className="absolute inset-0 blur-md opacity-0 group-hover:opacity-50 transition-opacity duration-300">
+                      <Mail size={18} />
+                    </div>
+                  </div>
+                  <span className="font-medium">Email Us</span>
+                </div>
+
+                {/* Dropdown list */}
+                <div className="absolute left-0 mt-2 w-72 rounded-md shadow-lg bg-white ring-1 ring-black/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10">
+                  <div className="py-2">
+                    <a
+                      href="mailto:info@panachealuminium.com"
+                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-blue-600"
+                    >
+                      info@panachealuminium.com
+                    </a>
+                    <a
+                      href="mailto:admin@panachealuminium.com"
+                      className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100 hover:text-blue-600"
+                    >
+                      admin@panachealuminium.com
+                    </a>
+                  </div>
+                </div>
+              </div>
+              {/* End Email */}
             </div>
           </div>
         </div>
@@ -130,7 +159,7 @@ const Footer = () => {
         {/* Copyright */}
         <div className="mt-8 sm:mt-12 pt-6 sm:pt-8 border-t border-gray-200/30 text-center">
           <p className="text-xs sm:text-sm text-gray-600">
-            © {new Date().getFullYear()} Palanche Industries. All rights reserved.
+            © {new Date().getFullYear()} Panache Industries. All rights reserved.
           </p>
         </div>
       </div>
