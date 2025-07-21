@@ -145,33 +145,21 @@ const ContactPage = () => {
                 Office
               </h3>
               <p className="text-gray-700 leading-relaxed text-sm sm:text-base">
+                A/306 Ramji House, Jambulwadi, JSS road, Dhobitalav, Near Metro cinema, Mumbai 400002.
+              </p>
+            </div>
+             
+            <div className="p-6 sm:p-8 md:border-r md:border-gray-600 bg-white md:bg-transparent rounded-lg md:rounded-none shadow-sm md:shadow-none">
+              <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-3 sm:mb-4">
+                factory 
+              </h3>
+              <p className="text-gray-700 leading-relaxed text-sm sm:text-base">
                 Survey 187, Plot 1, Shivajinagar Road, Taluka Khandala, District
                 Satara, Ahire, Maharashtra 412802, India
               </p>
             </div>
-            {/* Office 2 
-            <div className="p-6 sm:p-8 md:border-r md:border-gray-600 bg-white md:bg-transparent rounded-lg md:rounded-none shadow-sm md:shadow-none">
-              <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-3 sm:mb-4">
-                Office 2
-              </h3>
-              <p className="text-gray-700 leading-relaxed text-sm sm:text-base">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-                aliquam nisi nisi, eu imperdiet ex ullamcorper eu. Pellentesque
-                quis turpis cursus.
-              </p>
-            </div>*/}
 
-            {/* Plant 1 */}
-            <div className="p-6 sm:p-8 bg-white md:bg-transparent rounded-lg md:rounded-none shadow-sm md:shadow-none">
-              <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-3 sm:mb-4">
-                Plant 1
-              </h3>
-              <p className="text-gray-700 leading-relaxed text-sm sm:text-base">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-                aliquam nisi nisi, eu imperdiet ex ullamcorper eu. Pellentesque
-                quis turpis cursus.
-              </p>
-            </div>
+            
           </div>
 
           {/* Embedded Google Map */}
