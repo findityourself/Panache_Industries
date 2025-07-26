@@ -26,8 +26,8 @@ const Footer = () => {
               </h3>
             </div>
             <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
-              Lorem Ipsum Dolor Sit Amet, Consectetur Adipiscing Elit, Sed Do
-              Eiusmod Tempor Incididunt Ut Labore Et Dolore Magna Aliqua
+              Survey 187, Plot 1, Shivajinagar Road, Taluka Khandala, District
+          Satara, Ahire, Maharashtra 412802, India
             </p>
             <button className="relative px-6 sm:px-8 py-2.5 sm:py-3 bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white rounded-xl text-sm sm:text-base font-medium shadow-xl shadow-blue-500/25 transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-blue-500/40 group overflow-hidden">
               <Link

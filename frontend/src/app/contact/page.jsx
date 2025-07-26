@@ -133,35 +133,34 @@ const ContactPage = () => {
       </div>
 
       {/* Our Locations Section */}
-      <div className="py-16 sm:py-20 md:py-24 bg-[#FFFDF9]">
-        <div className="container mx-auto px-4 sm:px-6">
-          <h2 className="text-4xl sm:text-5xl md:text-6xl font-medium text-center text-gray-900 mb-10 sm:mb-12">
-            OUR LOCATIONS
-          </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-0 max-w-5xl mx-auto rounded-lg overflow-hidden border md:border-0 border-gray-300">
-            {/* Office 1 */}
-            <div className="p-6 sm:p-8 md:border-r md:border-gray-600 bg-white md:bg-transparent rounded-lg md:rounded-none shadow-sm md:shadow-none">
-              <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-3 sm:mb-4">
-                Office
-              </h3>
-              <p className="text-gray-700 leading-relaxed text-sm sm:text-base">
-                A/306 Ramji House, Jambulwadi, JSS road, Dhobitalav, Near Metro cinema, Mumbai 400002.
-              </p>
-            </div>
-             
-            <div className="p-6 sm:p-8 md:border-r md:border-gray-600 bg-white md:bg-transparent rounded-lg md:rounded-none shadow-sm md:shadow-none">
-              <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-3 sm:mb-4">
-                factory 
-              </h3>
-              <p className="text-gray-700 leading-relaxed text-sm sm:text-base">
-                Survey 187, Plot 1, Shivajinagar Road, Taluka Khandala, District
-                Satara, Ahire, Maharashtra 412802, India
-              </p>
-            </div>
-
-            
-          </div>
-
+<div className="py-16 sm:py-20 md:py-24 bg-[#FFFDF9]">
+  <div className="container mx-auto px-4 sm:px-6">
+    <h2 className="text-4xl sm:text-5xl md:text-6xl font-medium text-center text-gray-900 mb-10 sm:mb-12">
+      OUR LOCATIONS
+    </h2>
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-0 max-w-5xl mx-auto rounded-lg overflow-hidden border md:border-0 border-gray-300">
+      {/* Office 1 */}
+      <div className="p-6 sm:p-8 md:border-r md:border-gray-600 bg-white md:bg-transparent rounded-lg md:rounded-none shadow-sm md:shadow-none">
+        <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-3 sm:mb-4">
+          Office
+        </h3>
+        <p className="text-gray-700 leading-relaxed text-sm sm:text-base">
+          A/306 Ramji House, Jambulwadi, JSS road, Dhobitalav, Near Metro cinema, Mumbai 400002.
+        </p>
+      </div>
+       
+      {/* Factory - Removed border classes */}
+      <div className="p-6 sm:p-8 bg-white md:bg-transparent rounded-lg md:rounded-none shadow-sm md:shadow-none">
+        <h3 className="text-xl sm:text-2xl font-bold text-gray-900 mb-3 sm:mb-4">
+          Factory 
+        </h3>
+        <p className="text-gray-700 leading-relaxed text-sm sm:text-base">
+          Survey 187, Plot 1, Shivajinagar Road, Taluka Khandala, District
+          Satara, Ahire, Maharashtra 412802, India
+        </p>
+      </div>
+    </div>
+    
           {/* Embedded Google Map */}
           <div className="mt-12">
             <h3 className="text-2xl sm:text-3xl font-semibold text-center text-gray-800 mb-6">

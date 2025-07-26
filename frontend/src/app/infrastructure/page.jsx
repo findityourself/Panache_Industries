@@ -4,10 +4,11 @@ import React from "react";
 
 const InfrastructurePlant = () => {
   const labEquipment = [
-    { name: "Extrusion presses", img: "/q2.jpg" },
-    { name: "Log shear systems", img: "/q3.jpg" },
-    { name: "Precision furnaces", img: "/q4.jpg" },
-    { name: "Aging ovens", img: "/q5.jpg" },
+    { name: "Extrusion presses", img: "/q6.webp" },
+    { name: "Hot Log Ovens", img: "/q7.png" },
+    { name: "Melting furnaces", img: "/q81.jpg" },
+    { name: "Aging ovens", img: "/q9.jpeg" },
+    { name: "Automatic Double Puller System", img: "/q10.jpg" },
   ];
 
   return (
@@ -31,7 +32,7 @@ const InfrastructurePlant = () => {
         </div>
       </section>
 
-      {/* Plant Overview Section */}
+      {/* Plant Overview Section *
       <section className="py-16 sm:py-20 md:py-28 bg-[#f7f3ed]">
         <div className="container mx-auto px-4 sm:px-6 max-w-6xl">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 sm:gap-12 md:gap-16 items-center lg:items-end">
@@ -64,13 +65,15 @@ const InfrastructurePlant = () => {
           </div>
         </div>
       </section>
+      */}
 
       {/* Machinery & Technology Section */}
       <section className="py-16 sm:py-20 md:py-24 bg-[#f7f3ed]">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 md:px-8">
           <div className="flex flex-col md:flex-row gap-10 md:gap-16 items-center md:items-start">
             {/* Left: 2x2 Grid with Hover & Click Effect */}
-            <div className="md:w-2/3 w-full grid grid-cols-2 gap-6">
+            <div className="md:w-2/3 w-full grid grid-cols-2 md:grid-cols-3 gap-6">
+
               {labEquipment.map(({ name, img }, index) => (
                 <div
                   key={index}
@@ -187,11 +190,11 @@ const InfrastructurePlant = () => {
             <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-3 sm:mb-4">
               GALLERY
             </h2>
-            <p className="text-gray-600 text-xs sm:text-sm max-w-sm leading-relaxed">
+            {/*<p className="text-gray-600 text-xs sm:text-sm max-w-sm leading-relaxed">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               <br />
               aliquam aliquam nisi nisi.
-            </p>
+            </p>*/}
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
@@ -238,7 +241,7 @@ const InfrastructurePlant = () => {
               </div>
               <div className="h-[120px] sm:h-[160px] lg:h-[249px] overflow-hidden rounded-lg shadow-md">
                 <img
-                  src="/q5.jpg"
+                  src="/q5.png"
                   alt="Gallery 6"
                   className="w-full h-full object-cover"
                 />

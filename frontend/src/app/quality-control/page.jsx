@@ -8,8 +8,8 @@ export default function QualityControlPage() {
   const labEquipment = [
     { name: "UTS Tester", img: "/q2.jpg" },
     { name: "Brinell Hardness Tester", img: "/q3.jpg" },
-    { name: "Spectrometer", img: "/q4.jpg" },
-    { name: "Conductivity Tester", img: "/q5.jpg" },
+    { name: "Chemical Analyser", img: "/q4.jpg" },
+    { name: "Conductivity Tester", img: "/q5.png" },
   ];
 
   // State to track which image is selected in the gallery
@@ -34,11 +34,10 @@ export default function QualityControlPage() {
           </p>
         </div>
       </section>
-
-      {/* Quality Process Section */}
+      {/* Quality Process Section 
       <section className="py-12 sm:py-16 md:py-20 bg-[#f9f2eb]">
         <div className="max-w-xl sm:max-w-3xl md:max-w-4xl lg:max-w-6xl mx-auto px-4 sm:px-6 md:px-8 lg:px-12">
-          {/* Header */}
+          {/* Header 
           <div className="mb-10 sm:mb-12 md:mb-16">
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-blue-500 mb-4 sm:mb-6 md:mb-8 tracking-wide">
               QUALITY PROCESS
@@ -53,7 +52,7 @@ export default function QualityControlPage() {
           <div className="w-full h-px bg-blue-400 my-8"></div>
 
           <div className="space-y-8 sm:space-y-10 md:space-y-0">
-            {/* Step 1 */}
+            {/* Step 1 *
             <div className="flex flex-col md:flex-row items-center gap-6 sm:gap-8">
               <div className="flex-1 flex items-center md:order-1">
                 <span className="text-base sm:text-lg font-bold text-blue-600 mr-3 sm:mr-4 min-w-max">
@@ -71,7 +70,7 @@ export default function QualityControlPage() {
             </div>
             <div className="w-full h-px bg-blue-400 my-8"></div>
 
-            {/* Step 2 */}
+            {/* Step 2 *
             <div className="flex flex-col md:flex-row items-center gap-6 sm:gap-8">
               <div className="flex-1 flex items-center md:order-1">
                 <span className="text-base sm:text-lg font-bold text-blue-600 mr-3 sm:mr-4 min-w-max">
@@ -91,6 +90,8 @@ export default function QualityControlPage() {
           </div>
         </div>
       </section>
+      */}
+      
 
       {/* Certifications Section */}
       <section className="py-16 sm:py-24 md:py-36 bg-[#FFFDF9]">

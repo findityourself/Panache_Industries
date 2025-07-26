@@ -54,11 +54,11 @@ const AboutPage = () => {
         </div>
       </div>
 
-      {/* Our Story Timeline Section */}
+      {/* Our Story Timeline Section }
       <div className="py-12 sm:py-16 md:py-20 bg-[#F7F3ED]">
         <div className="container mx-auto px-4 sm:px-6">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
-            {/* Left side - Image */}
+            {/* Left side - Image 
             <div className="relative h-[300px] sm:h-[350px] md:h-[400px] w-full">
               <img
                 src="/h2.jpg"
@@ -67,7 +67,7 @@ const AboutPage = () => {
               />
             </div>
 
-            {/* Right side - Story */}
+            {/* Right side - Story *
             <div>
               <h2 className="text-3xl sm:text-4xl font-bold text-blue-600 mb-4 sm:mb-6">
                 OUR STORY
@@ -83,28 +83,28 @@ const AboutPage = () => {
                 quis turpis cursus.
               </p>
 
-              {/* Timeline */}
+              {/* Timeline *
               <div className="relative mt-10 sm:mt-12 md:mt-16">
-                {/* Timeline line */}
+                {/* Timeline line 
                 <div className="absolute left-0 w-full h-[1px] bg-black/60 top-[18px] sm:top-[22px]"></div>
 
-                {/* Timeline points */}
+                {/* Timeline points *
                 <div className="relative flex justify-between items-start">
                   {["YEAR", "YEAR", "YEAR", "YEAR"].map((year, index) => (
                     <div key={index} className="flex flex-col items-center">
-                      {/* Vertical line for first point */}
+                      {/* Vertical line for first point *
                       {index === 0 && (
                         <div className="absolute h-6 sm:h-8 w-[1px] bg-black/60 top-[-8px] sm:top-[-10px]"></div>
                       )}
 
-                      {/* Timeline dot */}
+                      {/* Timeline dot *
                       <div
                         className={`w-1.5 h-1.5 sm:w-2 sm:h-2 ${
                           index === 0 ? "bg-black" : "bg-black/60"
                         } rounded-full mb-2 sm:mb-3 mt-4 sm:mt-5`}
                       ></div>
 
-                      {/* Year text */}
+                      {/* Year text *
                       <p
                         className={`text-xs sm:text-sm font-medium ${
                           index === 0 ? "text-black" : "text-black/60"
@@ -113,7 +113,7 @@ const AboutPage = () => {
                         {year}
                       </p>
 
-                      {/* Event text for first point */}
+                      {/* Event text for first point *
                       {index === 0 && (
                         <div className="absolute top-[-25px] sm:top-[-30px] left-[-15px] sm:left-[-20px] whitespace-nowrap">
                           <p className="text-xs text-black/60">
@@ -318,11 +318,11 @@ const AboutPage = () => {
             <h2 className="text-4xl sm:text-5xl md:text-6xl font-medium text-black mb-3 sm:mb-4 text-center">
               WHAT WE OFFER?
             </h2>
-            <p className="text-base sm:text-lg text-black/70 mb-8 sm:mb-12 text-center max-w-2xl mx-auto px-2">
+            {/*<p className="text-base sm:text-lg text-black/70 mb-8 sm:mb-12 text-center max-w-2xl mx-auto px-2">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit aliquam
               aliquam nisi nisi, eu imperdiet ex ullamcorper eu pellentesque
               quis turpis cursus.
-            </p>
+            </p>*/}
 
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 justify-center">
               <Link

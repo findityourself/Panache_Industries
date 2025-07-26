@@ -29,7 +29,7 @@ const IndustriesPage = () => {
       bg: "bg-gray-900",
       textColor: "text-white",
       icon: <Lightbulb className="w-6 h-6 sm:w-8 sm:h-8" />,
-      image: "/h3.jpg",
+      image: "/h3.webp",
     },
     {
       title: "AUTOMOTIVE\n& TRANSPORT",
@@ -37,7 +37,7 @@ const IndustriesPage = () => {
       bg: "bg-gray-600",
       textColor: "text-white",
       icon: <Car className="w-6 h-6 sm:w-8 sm:h-8" />,
-      image: "/p1.jpg",
+      image: "/h4.jpg",
     },
     {
       title: "INDUSTRIAL\nMACHINERY",
@@ -45,7 +45,7 @@ const IndustriesPage = () => {
       bg: "bg-orange-500",
       textColor: "text-white",
       icon: <Cog className="w-6 h-6 sm:w-8 sm:h-8" />,
-      image: "/p2.jpg",
+      image: "/h5.webp",
     },
     // Added cards below
     {
@@ -54,7 +54,7 @@ const IndustriesPage = () => {
       bg: "bg-rose-500",
       textColor: "text-white",
       icon: <Building className="w-6 h-6 sm:w-8 sm:h-8" />,
-      image: "/h2.jpg",
+      image: "/h6.jpg",
     },
     {
       title: "RETAIL\n& \nHOSPITALITY",
@@ -62,7 +62,7 @@ const IndustriesPage = () => {
       bg: "bg-teal-600",
       textColor: "text-white",
       icon: <Lightbulb className="w-6 h-6 sm:w-8 sm:h-8" />,
-      image: "/h1.jpg",
+      image: "/h7.webp",
     },
   ];
 
@@ -175,7 +175,7 @@ const IndustriesPage = () => {
   </div>
 </div>
 
-      {/* Case Studies Section */}
+      {/* Case Studies Section *
       <div className="py-16 sm:py-20 md:py-24 bg-[#FFFDF9]">
         <div className="container mx-auto px-4 sm:px-6">
           <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 sm:gap-12 md:gap-16 items-center">
@@ -205,7 +205,7 @@ const IndustriesPage = () => {
         </div>
       </div>
 
-      {/* Testimonials Section */}
+      {/* Testimonials Section *
       <div className="py-16 sm:py-20 md:py-24 bg-[#F7F3ED]">
         <div className="container mx-auto px-4 sm:px-6">
           <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 sm:gap-12 md:gap-16 items-center">
@@ -233,7 +233,7 @@ const IndustriesPage = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div>*/}
 
       <style jsx>{`
         @keyframes fadeIn {
