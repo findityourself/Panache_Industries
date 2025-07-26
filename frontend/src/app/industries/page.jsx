@@ -21,7 +21,7 @@ const IndustriesPage = () => {
       bg: "bg-blue-600",
       textColor: "text-white",
       icon: <Wind className="w-6 h-6 sm:w-8 sm:h-8" />,
-      image: "/h2.jpg",
+      image: "/h2.png",
     },
     {
       title: "LED\nLIGHTING",
