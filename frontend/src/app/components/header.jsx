@@ -10,7 +10,8 @@ const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const pathname = usePathname();
 
-  const isActive = (path) => pathname === path;
+  const isActive = (path) => pathname.startsWith(path);
+
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
 
   useEffect(() => {
