@@ -101,13 +101,14 @@ const IndustriesPage = () => {
         <div
           key={index}
           className={`relative rounded-xl sm:rounded-2xl overflow-hidden cursor-pointer transition-all duration-500 ease-in-out
-            ${
-              index === activeCard
-                ? "w-[480px] lg:w-[600px]"
-                : "w-32 lg:w-44"
-            }
-            h-[300px] sm:h-[400px] md:h-[500px] flex-shrink-0 group
-          `}
+  ${
+    index === activeCard
+      ? "w-[280px] sm:w-[400px] md:w-[480px] lg:w-[600px] h-[260px] sm:h-[340px] md:h-[450px]"
+      : "w-20 sm:w-28 md:w-32 lg:w-44 h-[200px] sm:h-[280px] md:h-[300px]"
+  }
+  flex-shrink-0 group
+`}
+
           onClick={() => setActiveCard(index)}
         >
           {/* Background Image */}

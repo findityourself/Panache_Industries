@@ -279,12 +279,12 @@ const AboutPage = () => {
               <div key={index} className="border-b border-gray-300">
                 <button
                   onClick={() => handleValueClick(value.title)}
-                  className="w-full py-2 sm:py-3 flex items-center justify-between text-left group"
+                  className="w-full py-2 sm:py-3 px-2 sm:px-3 flex items-center justify-between text-left group transition-all duration-200 ease-in-out hover:bg-blue-50 rounded-md hover:scale-[1.01]"
                 >
-                  <span className="text-gray-800 font-[600] text-lg sm:text-xl md:text-2xl">
+                  <span className="text-gray-800 font-[600] text-lg sm:text-xl md:text-2xl group-hover:text-blue-600 transition-colors duration-200">
                     {value.title}
                   </span>
-                  <span className="text-gray-400 text-lg sm:text-xl">
+                  <span className="text-gray-400 text-lg sm:text-xl group-hover:text-blue-600 transition-colors duration-200">
                     {openValue === value.title ? "×" : "+"}
                   </span>
                 </button>
@@ -311,98 +311,67 @@ const AboutPage = () => {
 </div>
 
 
+
       {/* What We Offer Section */}
-      <div className="py-12 sm:py-16 md:py-20 bg-[#F7F3ED]">
-        <div className="container mx-auto px-4 sm:px-6">
-          <div className="max-w-xl md:max-w-3xl lg:max-w-6xl mx-auto">
-            <h2 className="text-4xl sm:text-5xl md:text-6xl font-medium text-black mb-3 sm:mb-4 text-center">
-              WHAT WE OFFER?
-            </h2>
-            {/*<p className="text-base sm:text-lg text-black/70 mb-8 sm:mb-12 text-center max-w-2xl mx-auto px-2">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit aliquam
-              aliquam nisi nisi, eu imperdiet ex ullamcorper eu pellentesque
-              quis turpis cursus.
-            </p>*/}
+<div className="py-12 sm:py-16 md:py-20 bg-[#F7F3ED]">
+  <div className="container mx-auto px-4 sm:px-6">
+    <div className="max-w-xl md:max-w-3xl lg:max-w-6xl mx-auto">
+      <h2 className="text-4xl sm:text-5xl md:text-6xl font-medium text-black mb-3 sm:mb-4 text-center">
+        WHAT WE OFFER?
+      </h2>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 justify-center">
-              <Link
-                href="/quality-control"
-                className="group relative overflow-hidden w-full max-w-[360px] h-[350px] sm:h-[400px] md:h-[472px] mx-auto"
-              >
-                <div className="w-full h-full">
-                  <img
-                    src="/q1.jpg"
-                    alt="Quality Control"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <div className="absolute inset-0 bg-black/20 flex flex-col justify-between p-4 sm:p-6">
-                  <h3 className="text-xl sm:text-2xl font-semibold text-white">
-                    QUALITY
-                    <br />
-                    CONTROL
-                  </h3>
-                  <div className="self-end">
-                    <div className="w-7 h-7 sm:w-8 sm:h-8 bg-white rounded-full flex items-center justify-center">
-                      <span className="text-black text-lg sm:text-xl">→</span>
-                    </div>
-                  </div>
-                </div>
-              </Link>
-
-              <Link
-                href="/infrastructure"
-                className="group relative overflow-hidden w-full max-w-[360px] h-[350px] sm:h-[400px] md:h-[472px] mx-auto"
-              >
-                <div className="w-full h-full">
-                  <img
-                    src="/infrabg.jpg"
-                    alt="Our Infrastructure"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <div className="absolute inset-0 bg-black/20 flex flex-col justify-between p-4 sm:p-6">
-                  <h3 className="text-xl sm:text-2xl font-semibold text-white">
-                    OUR
-                    <br />
-                    INFRASTRUCTRE
-                  </h3>
-                  <div className="self-end">
-                    <div className="w-7 h-7 sm:w-8 sm:h-8 bg-white rounded-full flex items-center justify-center">
-                      <span className="text-black text-lg sm:text-xl">→</span>
-                    </div>
-                  </div>
-                </div>
-              </Link>
-
-              <Link
-                href="/industries"
-                className="group relative overflow-hidden w-full max-w-[360px] h-[350px] sm:h-[400px] md:h-[472px] mx-auto"
-              >
-                <div className="w-full h-full">
-                  <img
-                    src="/industries.jpg"
-                    alt="Industries We Serve"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <div className="absolute inset-0 bg-black/20 flex flex-col justify-between p-4 sm:p-6">
-                  <h3 className="text-xl sm:text-2xl font-semibold text-white">
-                    INDUSTRIES WE
-                    <br />
-                    SERVE
-                  </h3>
-                  <div className="self-end">
-                    <div className="w-7 h-7 sm:w-8 sm:h-8 bg-white rounded-full flex items-center justify-center">
-                      <span className="text-black text-lg sm:text-xl">→</span>
-                    </div>
-                  </div>
-                </div>
-              </Link>
+      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 justify-center">
+        {[
+          {
+            href: "/quality-control",
+            img: "/q1.jpg",
+            title: "QUALITY\nCONTROL",
+            alt: "Quality Control",
+          },
+          {
+            href: "/infrastructure",
+            img: "/infrabg.jpg",
+            title: "OUR\nINFRASTRUCTURE",
+            alt: "Our Infrastructure",
+          },
+          {
+            href: "/industries",
+            img: "/industries.jpg",
+            title: "INDUSTRIES WE\nSERVE",
+            alt: "Industries We Serve",
+          },
+        ].map((item, i) => (
+          <Link
+            key={i}
+            href={item.href}
+            className="group relative overflow-hidden w-full max-w-[360px] h-[350px] sm:h-[400px] md:h-[472px] mx-auto rounded-lg"
+          >
+            {/* Background image with zoom effect */}
+            <div className="w-full h-full overflow-hidden">
+              <img
+                src={item.img}
+                alt={item.alt}
+                className="w-full h-full object-cover transition-transform duration-500 ease-in-out group-hover:scale-110"
+              />
             </div>
-          </div>
-        </div>
+
+            {/* Overlay and text */}
+            <div className="absolute inset-0 bg-black/20 group-hover:bg-black/40 transition-all duration-300 ease-in-out flex flex-col justify-between p-4 sm:p-6">
+              <h3 className="text-xl sm:text-2xl font-semibold text-white whitespace-pre-line">
+                {item.title}
+              </h3>
+              <div className="self-end">
+                <div className="w-7 h-7 sm:w-8 sm:h-8 bg-white rounded-full flex items-center justify-center transition-transform duration-300 group-hover:scale-110">
+                  <span className="text-black text-lg sm:text-xl">→</span>
+                </div>
+              </div>
+            </div>
+          </Link>
+        ))}
       </div>
+    </div>
+  </div>
+</div>
 
       
 
