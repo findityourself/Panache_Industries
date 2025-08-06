@@ -2,89 +2,8 @@
 import React, { useState } from "react";
 import { Search, Download, ArrowLeft, Plus, Minus } from "lucide-react";
 import { useRouter } from "next/navigation";
+import { products } from "@data/products"; // Adjust the import path as necessary
 
-const products = [
-  {
-    id: 1,
-    name: "Aluminum Windows Series",
-    description: "High-quality aluminum windows for modern buildings",
-    image: "/p1.jpg",
-    price: "From $450",
-    fullDescription:
-      "Our aluminum windows combine durability with sleek design, offering excellent thermal performance and weather resistance. Available in various styles and finishes.",
-    specifications: [
-      "Material: High-grade aluminum",
-      "Finish: Powder-coated, various colors",
-      "Glass: Double/triple glazing options",
-      "Security: Multi-point locking system",
-      "Warranty: 10 years"
-    ],
-  },
-  {
-    id: 2,
-    name: "Premium Door Systems",
-    description: "Secure and stylish aluminum door solutions",
-    image: "/p2.jpg",
-    price: "From $850",
-    fullDescription:
-      "Our aluminum doors provide superior security and insulation while maintaining elegant aesthetics. Suitable for both residential and commercial applications.",
-    specifications: [
-      "Material: Reinforced aluminum",
-      "Types: Sliding, folding, hinged options",
-      "Finish: Anodized or powder-coated",
-      "Security: High-grade locking mechanisms",
-      "Customization: Various sizes and designs"
-    ],
-  },
-  {
-    id: 3,
-    name: "Architectural Railings",
-    description: "Modern safety and decorative railing systems",
-    image: "/p3.jpg",
-    price: "From $120 per meter",
-    fullDescription:
-      "Our aluminum railings combine safety with architectural beauty, perfect for balconies, staircases, and terraces. Custom designs available.",
-    specifications: [
-      "Material: Marine-grade aluminum",
-      "Styles: Glass, horizontal, vertical",
-      "Finish: Brushed, powder-coated",
-      "Installation: Wall or floor mounted",
-      "Maintenance: Virtually maintenance-free"
-    ],
-  },
-  {
-    id: 4,
-    name: "Structural Aluminum Profiles",
-    description: "Industrial-strength aluminum framing systems",
-    image: "/p4.jpg",
-    price: "From $25 per meter",
-    fullDescription:
-      "Structural aluminum profiles for construction and industrial applications. Lightweight yet strong, corrosion-resistant framing solutions.",
-    specifications: [
-      "Material: 6000-series aluminum",
-      "Types: T-slot, angle, channel, I-beam",
-      "Finish: Mill, anodized, or powder-coated",
-      "Applications: Frames, supports, enclosures",
-      "Custom: Cutting and machining available"
-    ],
-  },
-  {
-    id: 5,
-    name: "Curtain Wall Systems",
-    description: "Energy-efficient building facades",
-    image: "/p5.jpg",
-    price: "From $150 per sqm",
-    fullDescription:
-      "Advanced curtain wall systems that enhance building aesthetics while improving energy efficiency. Custom designs for any architectural vision.",
-    specifications: [
-      "System: Unitized or stick-built",
-      "Glazing: Thermal break technology",
-      "Performance: Weather and impact resistant",
-      "Design: Custom shapes and configurations",
-      "Sustainability: Recyclable materials"
-    ],
-  }
-];
 
 const ProductCatalogPage = () => {
   const [searchTerm, setSearchTerm] = useState("");
@@ -125,6 +44,8 @@ const ProductCatalogPage = () => {
       product.name.toLowerCase().includes(searchTerm.toLowerCase()) ||
       product.description.toLowerCase().includes(searchTerm.toLowerCase())
   );
+
+  console.log("Filtered Products:", filteredProducts);
 
   return (
     <div className="bg-white min-h-screen">

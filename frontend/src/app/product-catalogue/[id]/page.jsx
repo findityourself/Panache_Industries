@@ -1,90 +1,8 @@
 "use client";
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import { ArrowLeft, Download } from "lucide-react";
-
-const products = [
-  {
-    id: 1,
-    name: "Aluminum Windows Series",
-    description: "High-quality aluminum windows for modern buildings",
-    image: "/p1.jpg",
-    price: "From $450",
-    fullDescription:
-      "Our aluminum windows combine durability with sleek design, offering excellent thermal performance and weather resistance. Available in various styles and finishes.",
-    specifications: [
-      "Material: High-grade aluminum",
-      "Finish: Powder-coated, various colors",
-      "Glass: Double/triple glazing options",
-      "Security: Multi-point locking system",
-      "Warranty: 10 years"
-    ],
-  },
-  {
-    id: 2,
-    name: "Premium Door Systems",
-    description: "Secure and stylish aluminum door solutions",
-    image: "/p2.jpg",
-    price: "From $850",
-    fullDescription:
-      "Our aluminum doors provide superior security and insulation while maintaining elegant aesthetics. Suitable for both residential and commercial applications.",
-    specifications: [
-      "Material: Reinforced aluminum",
-      "Types: Sliding, folding, hinged options",
-      "Finish: Anodized or powder-coated",
-      "Security: High-grade locking mechanisms",
-      "Customization: Various sizes and designs"
-    ],
-  },
-  {
-    id: 3,
-    name: "Architectural Railings",
-    description: "Modern safety and decorative railing systems",
-    image: "/p3.jpg",
-    price: "From $120 per meter",
-    fullDescription:
-      "Our aluminum railings combine safety with architectural beauty, perfect for balconies, staircases, and terraces. Custom designs available.",
-    specifications: [
-      "Material: Marine-grade aluminum",
-      "Styles: Glass, horizontal, vertical",
-      "Finish: Brushed, powder-coated",
-      "Installation: Wall or floor mounted",
-      "Maintenance: Virtually maintenance-free"
-    ],
-  },
-  {
-    id: 4,
-    name: "Structural Aluminum Profiles",
-    description: "Industrial-strength aluminum framing systems",
-    image: "/p4.jpg",
-    price: "From $25 per meter",
-    fullDescription:
-      "Structural aluminum profiles for construction and industrial applications. Lightweight yet strong, corrosion-resistant framing solutions.",
-    specifications: [
-      "Material: 6000-series aluminum",
-      "Types: T-slot, angle, channel, I-beam",
-      "Finish: Mill, anodized, or powder-coated",
-      "Applications: Frames, supports, enclosures",
-      "Custom: Cutting and machining available"
-    ],
-  },
-  {
-    id: 5,
-    name: "Curtain Wall Systems",
-    description: "Energy-efficient building facades",
-    image: "/p5.jpg",
-    price: "From $150 per sqm",
-    fullDescription:
-      "Advanced curtain wall systems that enhance building aesthetics while improving energy efficiency. Custom designs for any architectural vision.",
-    specifications: [
-      "System: Unitized or stick-built",
-      "Glazing: Thermal break technology",
-      "Performance: Weather and impact resistant",
-      "Design: Custom shapes and configurations",
-      "Sustainability: Recyclable materials"
-    ],
-  }
-];
+import { products } from "@data/products"; // Adjust the import path as necessary
 
 export default function ProductDetailPage({ params }) {
   const router = useRouter();
@@ -92,6 +10,16 @@ export default function ProductDetailPage({ params }) {
     typeof params.then === "function" ? React.use(params) : params;
   const id = parseInt(actualParams.id, 10);
   const product = products.find((p) => p.id === id);
+
+  const [selectedImage, setSelectedImage] = useState(
+    product ? product.images?.[0] || product.image : null
+  );
+
+  useEffect(() => {
+    if (product) {
+      setSelectedImage(product.images?.[0] || product.image);
+    }
+  }, [product]);
 
   if (!product) {
     return (
@@ -110,13 +38,19 @@ export default function ProductDetailPage({ params }) {
     );
   }
 
+  // Updated function to use the specific product's PDF link
   const handleDownloadCatalog = () => {
-    const link = document.createElement("a");
-    link.href = "/product-catalogue.pdf";
-    link.download = "product-catalogue.pdf";
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
+    if (product.pdf) {
+      const link = document.createElement("a");
+      link.href = product.pdf; // Use the specific PDF from the product object
+      link.download = `${product.name.replace(/\s/g, "-").toLowerCase()}.pdf`; // Generate a user-friendly filename
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    } else {
+      console.error("No PDF catalogue available for this product.");
+      alert("No PDF catalogue available for this product.");
+    }
   };
 
   return (
@@ -149,49 +83,34 @@ export default function ProductDetailPage({ params }) {
         </div>
         <div className="flex flex-col lg:flex-row h-full gap-6 sm:gap-8">
           <div className="lg:w-1/2">
-            <div className="aspect-[4/5] mb-3 sm:mb-4 rounded-lg overflow-hidden bg-gray-200 flex items-center justify-center">
+            <div className="aspect-[4/5] mb-3 sm:mb-4 rounded-lg overflow-hidden bg-gray-200 flex items-center justify-center relative">
               <img
-                src={product.image}
+                src={selectedImage}
                 alt={product.name}
                 className="w-full h-full object-cover"
-                onError={(e) => {
-                  e.target.style.display = "none";
-                  e.target.nextSibling.style.display = "flex";
-                }}
               />
-              <span
-                className="text-gray-400 text-base sm:text-lg font-semibold"
-                style={{ display: "none" }}
-              >
-                Product Image
-              </span>
             </div>
-            <div className="flex gap-1 sm:gap-2">
-              {[1, 2, 3].map((_, idx) => (
+            <div className="flex gap-1 sm:gap-2 overflow-x-auto">
+              {product.images?.slice(0, 5).map((imgUrl, idx) => (
                 <div
                   key={idx}
-                  className="w-16 h-16 sm:w-20 sm:h-20 rounded-lg overflow-hidden bg-gray-200 flex items-center justify-center border-2 border-blue-500"
+                  onClick={() => setSelectedImage(imgUrl)}
+                  className={`w-16 h-16 sm:w-20 sm:h-20 rounded-lg overflow-hidden bg-gray-200 flex items-center justify-center cursor-pointer border-2 ${
+                    selectedImage === imgUrl ? "border-blue-600" : "border-transparent"
+                  }`}
                 >
                   <img
-                    src={product.image}
+                    src={imgUrl}
                     alt={`${product.name} view ${idx + 1}`}
                     className="w-full h-full object-cover"
-                    onError={(e) => {
-                      e.target.style.display = "none";
-                      e.target.nextSibling.style.display = "flex";
-                    }}
                   />
-                  <span
-                    className="text-gray-400 text-xs"
-                    style={{ display: "none" }}
-                  >
-                    Img
-                  </span>
                 </div>
               ))}
-              <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-lg bg-gray-300 flex items-center justify-center text-gray-600 font-semibold text-sm sm:text-base">
-                +2
-              </div>
+              {product.images?.length > 5 && (
+                <div className="w-16 h-16 sm:w-20 sm:h-20 rounded-lg bg-gray-300 flex items-center justify-center text-gray-600 font-semibold text-sm sm:text-base">
+                  +{product.images.length - 5}
+                </div>
+              )}
             </div>
           </div>
           <div className="lg:w-1/2">
