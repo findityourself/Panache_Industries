@@ -9,6 +9,7 @@ const InfrastructurePlant = () => {
     { name: "Melting furnaces", img: "/q81.jpg" },
     { name: "Aging ovens", img: "/q9.jpeg" },
     { name: "Automatic Double Puller System", img: "/q10.jpg" },
+    { name: "Homogenising Furnace", img: "/homogenising2.jpg" },
   ];
 
   return (
