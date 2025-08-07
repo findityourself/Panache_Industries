@@ -24,8 +24,6 @@ export default function OurProcess() {
 
   return (
     <main className="relative min-h-screen pt-24 px-4 sm:px-6 lg:px-8 bg-[#F7F3ED] overflow-hidden">
-      {/* Removed dark gradient overlay */}
-
       <div className="relative z-10 max-w-6xl mx-auto text-center">
         <h1 className="text-4xl font-bold text-gray-800 mb-6">Our Process</h1>
         <p className="text-lg text-gray-600 mb-10">
@@ -35,7 +33,7 @@ export default function OurProcess() {
         {/* Flowchart Image */}
         <div
           ref={imageRef}
-          className={`relative w-full max-w-4xl mx-auto rounded-2xl overflow-hidden transition-all duration-1000 ease-out ${
+          className={`relative w-full max-w-4xl mx-auto transition-all duration-1000 ease-out ${
             isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
           }`}
         >
@@ -44,7 +42,8 @@ export default function OurProcess() {
             alt="Our Process Flowchart"
             width={1000}
             height={650}
-            className="w-full h-auto object-contain rounded-2xl"
+            className="w-full h-auto object-contain"
+            priority
           />
         </div>
       </div>
