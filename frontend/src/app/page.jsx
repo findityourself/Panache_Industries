@@ -116,7 +116,7 @@ const MainContent = () => {
                 </div>
                 <p className="text-xs mt-1 text-blue-400">
                   Our PLC-controlled extrusion lines deliver precise, versatile
-                  aluminum profiles from 5mm to 200mm.
+                  aluminum profiles from 0.4mm thin to 300mm wide.
                 </p>
               </div>
 
@@ -187,7 +187,7 @@ const MainContent = () => {
               {/* Additional Industrial Image */}
               <div className="overflow-hidden shadow-md h-48 hover:shadow-lg transition-shadow rounded-none">
                 <img
-                  src="/mid.jpg"
+                  src="/mid1.avif"
                   alt="industrial"
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                   style={{ borderRadius: 0 }}
@@ -252,12 +252,13 @@ const MainContent = () => {
                 {/* Middle Full Color Image - Static Display */}
 <div className="h-[250px] overflow-hidden rounded-none">
   <img
-    src="/mid.jpg"
+    src="/mid1.avif"
     alt="Industrial Color"
-    className="w-full h-full object-contain"
+    className="w-full h-full object-cover"
     style={{ borderRadius: 0, cursor: "default" }}
   />
 </div>
+
 
 
                 {/* Bottom B/W Card */}
