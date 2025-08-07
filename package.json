@@ -21,5 +21,8 @@
   "homepage": "https://github.com/harshvi-dagli/panache#readme",
   "devDependencies": {
     "concurrently": "^9.2.0"
+  },
+  "dependencies": {
+    "lucide-react": "^0.536.0"
   }
 }

@@ -109,12 +109,12 @@ const MainContent = () => {
               {/* Blue Stats Card */}
               <div className="bg-white p-6 shadow-md hover:shadow-lg transition-shadow rounded-none">
                 <div className="mb-4">
-                  <h3 className="text-xl font-bold uppercase">
+                  <h3 className="text-xl font-bold text-blue-600 uppercase">
                     Advanced Extrusion Technology
                   </h3>
                   <h4 className="text-xl font-bold text-blue-600 "></h4>
                 </div>
-                <p className="text-xs mt-1">
+                <p className="text-xs mt-1 text-blue-400">
                   Our PLC-controlled extrusion lines deliver precise, versatile
                   aluminum profiles from 5mm to 200mm.
                 </p>
@@ -143,7 +143,7 @@ const MainContent = () => {
               {/* Main Industrial Image */}
               <div className="overflow-hidden shadow-md h-48 hover:shadow-lg transition-shadow rounded-none">
                 <img
-                  src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                  src="/q81.jpg"
                   alt="Industrial Color"
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                   style={{ borderRadius: 0 }}
@@ -187,17 +187,14 @@ const MainContent = () => {
               {/* Additional Industrial Image */}
               <div className="overflow-hidden shadow-md h-48 hover:shadow-lg transition-shadow rounded-none">
                 <img
-                  src="https://images.unsplash.com/photo-1587293852726-70cdb56c2866?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                  src="/mid.jpg"
                   alt="industrial"
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                   style={{ borderRadius: 0 }}
                 />
               </div>
 
-              {/* Settings Icon Card */}
-              <div className="bg-orange-500 flex items-center justify-center shadow-md h-20 hover:shadow-lg hover:bg-orange-600 transition-all cursor-pointer rounded-none">
-                <Settings className="text-white w-8 h-8" />
-              </div>
+              
             </div>
 
             {/* Desktop: Original 3-column layout */}
@@ -220,11 +217,11 @@ const MainContent = () => {
                 {/* Bottom Left Industrial Image */}
                 <div className="overflow-hidden shadow-md h-[250px] hover:shadow-lg transition-shadow rounded-none">
                   <img
-                    src="https://images.unsplash.com/photo-1587293852726-70cdb56c2866?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                    alt="industrial"
-                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                    style={{ borderRadius: 0 }}
-                  />
+                  src="/q81.jpg"
+                  alt="industrial"
+                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+                  style={{ borderRadius: 0 }}
+                />
                 </div>
               </div>
 
@@ -252,14 +249,16 @@ const MainContent = () => {
                 </div>
 
                 {/* Middle Full Color Image */}
-                <div className="overflow-hidden shadow-md h-[250px] hover:shadow-lg transition-shadow rounded-none">
-                  <img
-                    src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                    alt="Industrial Color"
-                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                    style={{ borderRadius: 0 }}
-                  />
-                </div>
+                {/* Middle Full Color Image - Static Display */}
+<div className="h-[250px] overflow-hidden rounded-none">
+  <img
+    src="/mid.jpg"
+    alt="Industrial Color"
+    className="w-full h-full object-contain"
+    style={{ borderRadius: 0, cursor: "default" }}
+  />
+</div>
+
 
                 {/* Bottom B/W Card */}
                 <div className="relative bg-black p-6 shadow-md overflow-hidden h-[120px] hover:shadow-lg transition-shadow rounded-none">
@@ -299,9 +298,15 @@ const MainContent = () => {
                 </div>
 
                 {/* Orange Gear Card */}
-                <div className="bg-orange-500 flex items-center justify-center shadow-md h-[120px] hover:shadow-lg hover:bg-orange-600 transition-all cursor-pointer rounded-none">
-                  <Settings className="text-white w-10 h-10" />
-                </div>
+                <div className="shadow-md h-[120px] hover:shadow-lg transition-shadow rounded-none overflow-hidden">
+  <img
+    src="/q8.jpg"
+    alt="Industrial"
+    className="h-full w-full object-cover hover:scale-105 transition-transform duration-300"
+    style={{ cursor: "default" }}
+  />
+</div>
+
               </div>
             </div>
           </div>

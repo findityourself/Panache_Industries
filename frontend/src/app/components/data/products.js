@@ -5,8 +5,9 @@ export const products = [
     id: 1,
     name: "Solid Aluminium Profiles",
     description: "Durable extrusions for structural and industrial use",
-    images: ["/h2.png", "/q10.jpg"],
-    price: "From $20 per meter",
+    image: "/solid_profiles.jpg",
+    images: ["/solid_profiles.jpg", "/solid_profiles2.jpg"],
+    
     fullDescription:
       "Our solid profiles include angles, channels, flats, and other robust designs crafted from high-grade aluminium. Suitable for heavy-duty framing and general-purpose fabrication.",
     specifications: [
@@ -16,14 +17,15 @@ export const products = [
       "Applications: Structural frameworks, supports, machine components",
       "Weight Range: Varies by section (e.g., 0.5 – 15 Kgs./12')",
     ],
-    pdf: "/pdfs/solid-profiles.pdf", // Added a specific PDF link
+    pdf: "/pdfs/A - SOLID PROFILES.pdf", // Added a specific PDF link
   },
   {
     id: 2,
     name: "Hollow Tubes",
     description: "Versatile tubing solutions for all industries",
-    images: ["/solid_profiles2.jpg", "/q10.jpg"],
-    price: "From $18 per meter",
+    image:"/hollow_tubes2.jpg",
+    images: [ "/hollow_tubes2.jpg","/b.jpg","/hollow_tubes.jpg",],
+    
     fullDescription:
       "We offer a wide range of round, square, and rectangular hollow tubes with excellent strength-to-weight ratios for automotive, architectural, and general structural purposes.",
     specifications: [
@@ -33,48 +35,37 @@ export const products = [
       "Finish: Anodized or Powder-coated",
       "Weight Range: Varies by dimension and wall thickness",
     ],
-    pdf: "/pdfs/maxwell.pdf", // Added a specific PDF link
+    pdf: "/pdfs/B - HOLLOW TUBES.pdf", // Added a specific PDF link
   },
   {
     id: 3,
-    name: "Window Profiles",
-    description: "Complete range for sliding, casement, and fixed windows",
-    images: ["/solid_profiles2.jpg", "/q10.jpg"],
-    price: "From $25 per meter",
+    name: "Window Systems",
+    description: "Sliding, casement, and modular profiles for all window applications",
+    image: "/w3.webp",
+    images: ["/w3.webp","/p2.webp","/w6.jpg"],
+    
     fullDescription:
-      "This collection includes all profiles needed for openable, casement, and frame systems in window fabrication. Designed for precision, aesthetics, and performance in modern architecture.",
+       "Our window systems include standard and modular aluminium profiles for sliding, casement, and fixed windows. Crafted for durability and modern architecture, these profiles support energy efficiency, water resistance, and ease of fabrication. Whether for residential or commercial use, the systems ensure seamless integration with locking, gasket, and drainage accessories.",
     specifications: [
-      "Types: Sliding, Casement, Fixed frame systems",
-      "Profiles Included: Rails, Sashes, Mullions, Interlocks",
-      "Material: High-grade aluminium",
-      "Finish: Matte, Glossy, Anodized or Powder-coated",
-      "Applications: Residential and commercial buildings",
+      "Types: Sliding, Casement, Fixed, Modular (Thermal & Standard)",
+    "Profiles Included: Rails, Sashes, Mullions, Interlocks, Head, Sill",
+    "Material: High-grade 6000-series aluminium",
+    "Finish: Mill, Anodized (Natural, Black, Bronze), or Powder-coated",
+    "Accessories: Compatible with locks, EPDM gaskets, and drainage",
+    "Applications: Residential, commercial, and energy-efficient buildings",
+    "Warranty: Up to 10 years corrosion resistance (on select systems)",
     ],
-    pdf: "/pdfs/window-profiles.pdf", // Added a specific PDF link
+    pdf: "/pdfs/C - WINDOW PROFILES.pdf", // Added a specific PDF link
+    
   },
+  
   {
     id: 4,
-    name: "System Window Extrusions",
-    description: "Advanced profile system for modular windows",
-    images: ["/solid_profiles2.jpg", "/q10.jpg"],
-    price: "From $35 per meter",
-    fullDescription:
-      "Pre-engineered window systems built for high performance, featuring thermal insulation, water resistance, and quick-assembly designs.",
-    specifications: [
-      "System Type: Thermally broken and standard",
-      "Accessories: Compatible with locking and drainage systems",
-      "Profiles: Head, sill, mullion, sash",
-      "Applications: High-efficiency homes, commercial spaces",
-      "Warranty: 10-year corrosion resistance guarantee",
-    ],
-    pdf: "/pdfs/system-window-extrusions.pdf", // Added a specific PDF link
-  },
-  {
-    id: 5,
     name: "Partition Profiles",
     description: "Stylish and strong profiles for office and home partitions",
-    images: ["/solid_profiles2.jpg", "/q10.jpg"],
-    price: "From $22 per meter",
+    image:"/p5.jpeg",
+    images: ["/p5.jpeg", "/p2.webp","/p1.webp"],
+    
     fullDescription:
       "Extrusions suitable for internal partition walls—supporting glass or panels in commercial offices, clinics, and showrooms with elegance.",
     specifications: [
@@ -84,14 +75,15 @@ export const products = [
       "Finish: Silver, black, white, and custom anodized",
       "Integration: Works with blinds and accessories",
     ],
-    pdf: "/pdfs/partition-profiles.pdf", // Added a specific PDF link
+    pdf: "/pdfs/G - PARTITION.pdf", // Added a specific PDF link
   },
   {
-    id: 6,
+    id: 5,
     name: "Curtain Wall Systems",
     description: "Efficient facades with structural versatility",
-    images: ["/solid_profiles2.jpg", "/q10.jpg"],
-    price: "Custom pricing",
+    image:"/hc3.webp",
+    images: ["/hc3.webp", "/hc2.jpg","/hc1.webp","/hc.jpg","/hc4.jpg"],
+    
     fullDescription:
       "Explore our range of curtain wall profiles designed for unitized and stick-built systems. Ideal for large commercial facades requiring strength and elegance.",
     specifications: [
@@ -101,14 +93,15 @@ export const products = [
       "Finish: Mill, anodized, or powder-coated",
       "Weight Range: Approx. 0.65 to 16.40 Kgs./12'",
     ],
-    pdf: "/pdfs/curtain-wall-systems.pdf", // Added a specific PDF link
+    pdf: "/pdfs/H - CURTAIN WALL.pdf", // Added a specific PDF link
   },
   {
-    id: 7,
+    id: 6,
     name: "Glazing Profiles",
     description: "Comprehensive glazing support systems",
-    images: ["/solid_profiles2.jpg", "/q10.jpg"],
-    price: "Custom pricing",
+    image:"/g3.jpg",
+    images: ["/g3.jpg"],
+    
     fullDescription:
       "Designed to support glass panels in architectural applications, our glazing profiles come in a variety of sections for precise installations.",
     specifications: [
@@ -118,14 +111,15 @@ export const products = [
       "Applications: Window glazing, partition framing",
       "Finish: Standard aluminium finishes available",
     ],
-    pdf: "/pdfs/glazing-profiles.pdf", // Added a specific PDF link
+    pdf: "/pdfs/I - GLAZING PROFILE.pdf", // Added a specific PDF link
   },
   {
-    id: 8,
+    id: 7,
     name: "Ladder Profiles",
     description: "Specialized structural extrusions for ladder applications",
-    images: ["/solid_profiles2.jpg", "/q10.jpg"],
-    price: "From $32 per meter",
+    image:"/l.webp",
+    images: ["/l.webp", "/l2.jpeg","/l3.avif","/l5.avif"],
+    
     fullDescription:
       "Strong and secure aluminium sections specially manufactured for industrial and architectural ladders. Offers excellent load-bearing capacity and anti-slip detailing.",
     specifications: [
@@ -135,14 +129,15 @@ export const products = [
       "Custom Fabrication: Available upon request",
       "Weight Range: 1.2 – 13.9 Kgs./12'",
     ],
-    pdf: "/pdfs/ladder-profiles.pdf", // Added a specific PDF link
+    pdf: "/pdfs/J - LADDER PROFILE.pdf", // Added a specific PDF link
   },
   {
-    id: 9,
+    id: 8,
     name: "Railing Profiles",
     description: "Ergonomic and safe railing profiles for stairs, balconies, and facades",
-    images: ["/solid_profiles2.jpg", "/q10.jpg"],
-    price: "From $27 per meter",
+    image:"/r3.jpeg",
+    images: ["/r3.jpeg","/r1.webp","/r2.webp","/r4.jpg","/r5.jpg"],
+    
     fullDescription:
       "Aluminium profiles designed for railing systems in residential and commercial spaces. Offers sleek aesthetics, high grip, and easy install with modular fittings.",
     specifications: [
@@ -152,14 +147,15 @@ export const products = [
       "Finish: Anodized or powder coated",
       "Weight Range: 0.5 to 6.9 Kgs./12'",
     ],
-    pdf: "/pdfs/railing-profiles.pdf", // Added a specific PDF link
+    pdf: "/pdfs/K - RAILING PROFILES.pdf", // Added a specific PDF link
   },
   {
-    id: 10,
+    id: 9,
     name: "Miscellaneous Profiles",
     description: "Assorted custom and utility extrusions for various industries",
-    images: ["/solid_profiles2.jpg", "/q10.jpg"],
-    price: "Custom pricing",
+    image:"/fl3.webp",
+    images: ["/fl3.webp","/fl1.jpg","/fl5.avif","/fl6.jpg"],
+    
     fullDescription:
       "A broad selection of unique aluminium sections including flymesh tracks, wall cladding supports, cable management profiles, and architectural specials. Designed to cater to custom project requirements.",
     specifications: [
@@ -169,6 +165,6 @@ export const products = [
       "Weight Range: 0.093 to 19.20 Kgs./12'",
       "Finish: Varied across sections (mill, anodized, powder-coated)",
     ],
-    pdf: "/pdfs/miscellaneous-profiles.pdf", // Added a specific PDF link
+    pdf: "/pdfs/M - MISCELLANEOUS.pdf", // Added a specific PDF link
   },
 ];

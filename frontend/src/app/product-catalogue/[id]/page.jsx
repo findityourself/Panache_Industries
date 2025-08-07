@@ -143,9 +143,7 @@ export default function ProductDetailPage({ params }) {
               </ul>
             </div>
             <div className="space-y-3 sm:space-y-4">
-              <button className="text-blue-600 font-semibold hover:underline text-sm sm:text-base">
-                + Get A Quote
-              </button>
+              
               <button
                 onClick={handleDownloadCatalog}
                 className="flex items-center gap-1 sm:gap-2 text-gray-800 font-semibold hover:underline text-sm sm:text-base"

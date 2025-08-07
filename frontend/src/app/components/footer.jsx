@@ -77,9 +77,9 @@ const Footer = () => {
                   icon: Instagram,
                   label: "Instagram",
                   color: "hover:text-pink-500",
-                  href: "https://instagram.com/",
+                  href: "https://www.instagram.com/panachealuminium/",
                 },
-                {
+                /*{
                   icon: Facebook,
                   label: "Facebook",
                   color: "hover:text-blue-600",
@@ -90,12 +90,12 @@ const Footer = () => {
                   label: "Twitter",
                   color: "hover:text-sky-500",
                   href: "https://twitter.com/",
-                },
+                },*/
                 {
                   icon: Linkedin,
                   label: "LinkedIn",
                   color: "hover:text-blue-700",
-                  href: "https://linkedin.com/",
+                  href: "https://www.linkedin.com/in/panache-aluminium-2442a4253/",
                 },
               ].map(({ icon: Icon, label, color, href }) => (
                 <a

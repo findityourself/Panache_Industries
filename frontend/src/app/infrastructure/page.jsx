@@ -77,7 +77,7 @@ const InfrastructurePlant = () => {
               {labEquipment.map(({ name, img }, index) => (
                 <div
                   key={index}
-                  className="bg-white rounded-lg overflow-hidden shadow-md hover:scale-105 transition-transform duration-300 cursor-pointer text-center"
+                  className="bg-white rounded-lg overflow-hidden shadow-md hover:scale-105 transition-transform duration-300 text-center"
                 >
                   <img
                     src={img}

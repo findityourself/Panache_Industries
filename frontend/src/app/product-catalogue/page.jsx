@@ -94,14 +94,7 @@ const ProductCatalogPage = () => {
 
 
             </div>
-            <button
-              onClick={handleDownloadCatalog}
-              className="flex items-center gap-2 bg-gray-800 text-white px-6 py-3 rounded-lg hover:bg-gray-700 transition-colors font-semibold uppercase tracking-wide mt-6 lg:mt-0"
-              aria-label="Download product catalogue"
-            >
-              <Download className="w-5 h-5" />
-              DOWNLOAD CATALOGUE
-            </button>
+            
           </div>
 
           {/* Product Grid - 3x2 layout */}
@@ -122,7 +115,7 @@ const ProductCatalogPage = () => {
               filteredProducts.map((product, idx) => (
                 <div
                   key={product.id}
-                  className="relative group cursor-pointer overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-1"
+                  className="relative group cursor-pointer overflow-hidden rounded-none shadow-lg hover:shadow-xl transition-all transform hover:-translate-y-1"
                   tabIndex={0}
                   role="button"
                   aria-label={`View details for ${product.name}`}
@@ -150,14 +143,15 @@ const ProductCatalogPage = () => {
                       Product Image {idx + 1}
                     </span>
                   </div>
-                  <div className="absolute bottom-0 left-0 right-0 p-6 text-white bg-gradient-to-t from-black/70 via-transparent to-transparent">
-                    <h3 className="text-xl font-bold mb-2 uppercase tracking-wide line-clamp-2">
-                      {product.name}
-                    </h3>
-                    <p className="text-sm opacity-90 line-clamp-2">
-                      {product.description}
-                    </p>
-                  </div>
+                  <div className="absolute bottom-0 left-0 right-0 bg-black/60 backdrop-blur-sm p-4 sm:p-6 text-white">
+  <h3 className="text-lg sm:text-xl font-bold uppercase tracking-wide mb-1">
+    {product.name}
+  </h3>
+  <p className="text-sm sm:text-base text-gray-200 line-clamp-2">
+    {product.description}
+  </p>
+</div>
+
                 </div>
               ))
             )}
@@ -311,9 +305,7 @@ const ProductCatalogPage = () => {
                     </div>
 
                     {/* Get Quote Button */}
-                    <button className="text-blue-600 font-semibold hover:underline">
-                      + Get A Quote
-                    </button>
+                    
 
                     {/* Download Catalogue */}
                     <button
