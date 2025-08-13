@@ -105,111 +105,92 @@ const MainContent = () => {
             </p>
 
             {/* Mobile: Vertical Stack */}
-            <div className="block lg:hidden space-y-6">
-              {/* Blue Stats Card */}
-              <div className="bg-white p-6 shadow-md hover:shadow-lg transition-shadow rounded-none">
-                <div className="mb-4">
-                  <h3 className="text-xl font-bold text-blue-600 uppercase">
-                    Advanced Extrusion Technology
-                  </h3>
-                  <h4 className="text-xl font-bold text-blue-600 "></h4>
-                </div>
-                <p className="text-xs mt-1 text-blue-400">
-                  Our PLC-controlled extrusion lines deliver precise, versatile
-                  aluminum profiles from 0.4mm thin to 300mm wide.
-                </p>
-              </div>
+{/* Mobile: Vertical Stack */}
+<div className="block lg:hidden space-y-6">
+  {/* Blue Card */}
+  <div className="bg-blue-600 text-white p-6 shadow-md hover:shadow-lg transition-shadow rounded-none">
+    <div className="mb-2">
+      <p className="text-l font-bold uppercase">
+        Advanced Extrusion Technology
+      </p>
+    </div>
+    <p className="text-xs mt-1">
+      Our PLC-controlled extrusion lines deliver precise, versatile
+      aluminum profiles from 5mm to 200mm.
+    </p>
+  </div>
 
-              {/* Countries Card */}
-              <div className="relative bg-black p-6 shadow-md overflow-hidden hover:shadow-lg transition-shadow rounded-none">
-                <img
-                  src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                  alt="BW"
-                  className="absolute inset-0 w-full h-full object-cover opacity-30"
-                  style={{ borderRadius: 0 }}
-                />
-                <div className="relative text-white">
-                  <h3 className="text-l font-bold">
-                    In-House Fabrication & Finishing
-                  </h3>
-                  <h4 className="text-sm font-bold "></h4>
-                  <p className="text-xs mt-1">
-                    Our in-house fabrication and finishing deliver high-quality,
-                    precise aluminum profiles with full control over every step.
-                  </p>
-                </div>
-              </div>
+  {/* Additional Industrial Image */}
+  <div className="overflow-hidden shadow-md h-96 hover:shadow-lg transition-shadow rounded-none">
+    <img
+      src="/la.png"
+      alt="industrial"
+      className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+      style={{ borderRadius: 0 }}
+    />
+  </div>
 
-              {/* Main Industrial Image */}
-              <div className="overflow-hidden shadow-md h-48 hover:shadow-lg transition-shadow rounded-none">
-                <img
-                  src="/q81.jpg"
-                  alt="Industrial Color"
-                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                  style={{ borderRadius: 0 }}
-                />
-              </div>
+  {/* Precision Machinery Card */}
+  <div className="bg-blue-600 text-white p-6 shadow-md hover:shadow-lg transition-shadow rounded-none">
+    <div className="mb-2">
+      <p className="text-l font-bold uppercase">
+        Precision Machinery: Presses, Furnaces, Aging Ovens
+      </p>
+    </div>
+    <p className="text-xs mt-1">
+      Advanced machinery ensures precision and durability in every profile.
+    </p>
+  </div>
 
-              {/* Uptime Card */}
-              <div className="relative bg-black p-6 shadow-md overflow-hidden hover:shadow-lg transition-shadow rounded-none">
-                <img
-                  src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                  alt="BW2"
-                  className="absolute inset-0 w-full h-full object-cover opacity-30"
-                  style={{ borderRadius: 0 }}
-                />
-                <div className="relative text-white">
-                  <h3 className="text-l font-bold uppercase">
-                    Precision Machinery: Presses, Furnaces, Aging Ovens
-                  </h3>
-                  <h4 className="text-sm font-bold "></h4>
-                  <p className="text-xs mt-1">
-                    Advanced machinery ensures precision and durability in every
-                    profile.
-                  </p>
-                </div>
-              </div>
+  {/* Main Industrial Image */}
+  <div className="overflow-hidden shadow-md h-96 hover:shadow-lg transition-shadow rounded-none">
+    <img
+      src="/mid.png"
+      alt="Industrial Color"
+      className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+      style={{ borderRadius: 0 }}
+    />
+  </div>
 
-              {/* Since 1920 Card */}
-              <div className="bg-blue-600 text-white p-6 shadow-md hover:shadow-lg transition-shadow rounded-none">
-                <div className="mb-4">
-                  <p className="text-xl font-bold uppercase">
-                    Custom Profiles, Modular Systems, Thermal Breaks
-                  </p>
-                  <p className=""></p>
-                </div>
-                <p className="text-xs mt-1">
-                  We design custom profiles and modular systems with thermal
-                  breaks to enhance performance and energy efficiency.
-                </p>
-              </div>
+  {/* Custom Profiles Card */}
+  <div className="bg-blue-600 text-white p-6 shadow-md hover:shadow-lg transition-shadow rounded-none">
+    <div className="mb-4">
+      <p className="text-l font-bold uppercase">
+        Custom Profiles, Modular Systems, Thermal Breaks
+      </p>
+    </div>
+    <p className="text-xs mt-1">
+      We design custom profiles and modular systems with thermal
+      breaks to enhance performance and energy efficiency.
+    </p>
+  </div>
 
-              {/* Additional Industrial Image */}
-              <div className="overflow-hidden shadow-md h-48 hover:shadow-lg transition-shadow rounded-none">
-                <img
-                  src="/mid1.avif"
-                  alt="industrial"
-                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
-                  style={{ borderRadius: 0 }}
-                />
-              </div>
+  {/* Additional Industrial Image */}
+  <div className="overflow-hidden shadow-md h-96 hover:shadow-lg transition-shadow rounded-none">
+    <img
+      src="/glassybackground.png"
+      alt="industrial"
+      className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
+      style={{ borderRadius: 0 }}
+    />
+  </div>
+</div>
 
-              
-            </div>
+
 
             {/* Desktop: Original 3-column layout */}
             <div className="hidden lg:flex flex-nowrap items-stretch gap-6 h-[600px] overflow-x-auto">
               {/* Left Column */}
               <div className="flex flex-col gap-6 w-[30%]">
                 {/* Blue Card */}
-                <div className="bg-white p-6 shadow-md h-[250px] flex flex-col justify-between hover:shadow-lg transition-shadow rounded-none">
+                <div className="bg-blue-600 text-white p-6 shadow-md h-[250px] flex flex-col justify-between hover:shadow-lg transition-shadow rounded-none w-full">
                   <div>
-                    <h3 className="text-3xl font-bold text-blue-600 uppercase">
+                    <h3 className="text-2xl font-bold uppercase">
                       Advanced Extrusion Technology
                     </h3>
                     <h4 className="text-xl font-bold text-blue-600"></h4>
                   </div>
-                  <p className="text-blue-400 text-sm">
+                  <p className="text-sm">
                     Our PLC-controlled extrusion lines deliver precise,
                     versatile aluminum profiles from 5mm to 200mm.
                   </p>
@@ -217,7 +198,7 @@ const MainContent = () => {
                 {/* Bottom Left Industrial Image */}
                 <div className="overflow-hidden shadow-md h-[250px] hover:shadow-lg transition-shadow rounded-none">
                   <img
-                  src="/q81.jpg"
+                  src="/la.png"
                   alt="industrial"
                   className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
                   style={{ borderRadius: 0 }}
@@ -227,32 +208,13 @@ const MainContent = () => {
 
               {/* Center Column */}
               <div className="flex flex-col gap-6 w-[35%]">
-                {/* Top B/W Text Card */}
-                <div className="relative bg-black p-6 shadow-md overflow-hidden h-[120px] hover:shadow-lg transition-shadow rounded-none">
-                  <img
-                    src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                    alt="BW"
-                    className="absolute inset-0 w-full h-full object-cover opacity-30"
-                    style={{ borderRadius: 0 }}
-                  />
-                  <div className="relative text-white">
-                    <h3 className="text-l font-bold uppercase">
-                      In-House Fabrication & Finishing
-                    </h3>
-                    <h4 className="text-sm font-bold"></h4>
-                    <p className="text-xs mt-1">
-                      Our in-house fabrication and finishing deliver
-                      high-quality, precise aluminum profiles with full control
-                      over every step.
-                    </p>
-                  </div>
-                </div>
+                
 
                 {/* Middle Full Color Image */}
                 {/* Middle Full Color Image - Static Display */}
-<div className="h-[250px] overflow-hidden rounded-none">
+<div className="overflow-hidden shadow-md h-[250px] hover:shadow-lg transition-shadow rounded-none">
   <img
-    src="/mid1.avif"
+    src="/mid.png"
     alt="Industrial Color"
     className="w-full h-full object-cover"
     style={{ borderRadius: 0, cursor: "default" }}
@@ -262,30 +224,25 @@ const MainContent = () => {
 
 
                 {/* Bottom B/W Card */}
-                <div className="relative bg-black p-6 shadow-md overflow-hidden h-[120px] hover:shadow-lg transition-shadow rounded-none">
-                  <img
-                    src="https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
-                    alt="BW2"
-                    className="absolute inset-0 w-full h-full object-cover opacity-30"
-                    style={{ borderRadius: 0 }}
-                  />
-                  <div className="relative text-white">
-                    <h3 className="text-l font-bold uppercase">
-                      Precision Machinery: Presses, Furnaces, Aging Ovens
-                    </h3>
-                    <h4 className="text-sm font-bold "></h4>
-                    <p className="text-xs mt-1">
-                      Advanced machinery ensures precision and durability in
-                      every profile.
-                    </p>
-                  </div>
-                </div>
-              </div>
+                <div className="bg-blue-600 text-white p-6 shadow-md h-[250px] flex flex-col justify-between hover:shadow-lg transition-shadow rounded-none w-full">
+      <div>
+        <p className="text-2xl uppercase font-bold">
+          Precision Machinery: Presses, Furnaces, Aging Ovens
+        </p>
+        <p className="text-4xl font-bold"></p>
+      </div>
+      <p className="text-sm">
+        Advanced machinery ensures precision and durability in every profile.
+      </p>
+    </div>
+  </div>
+
+              
 
               {/* Right Column */}
               <div className="flex flex-col gap-6 w-[30%]">
                 {/* Blue Card */}
-                <div className="bg-blue-600 text-white p-6 shadow-md h-[350px] flex flex-col justify-between hover:shadow-lg transition-shadow rounded-none">
+                <div className="bg-blue-600 text-white p-6 shadow-md h-[250px] flex flex-col justify-between hover:shadow-lg transition-shadow rounded-none">
                   <div>
                     <p className="text-2xl uppercase font-bold">
                       Custom Profiles, Modular Systems, Thermal Breaks
@@ -299,9 +256,9 @@ const MainContent = () => {
                 </div>
 
                 {/* Orange Gear Card */}
-                <div className="shadow-md h-[120px] hover:shadow-lg transition-shadow rounded-none overflow-hidden">
+                <div className="shadow-md h-[250px] hover:shadow-lg transition-shadow rounded-none overflow-hidden">
   <img
-    src="/q8.jpg"
+    src="/glassybackground.png"
     alt="Industrial"
     className="h-full w-full object-cover hover:scale-105 transition-transform duration-300"
     style={{ cursor: "default" }}

@@ -134,7 +134,7 @@ const InfrastructurePlant = () => {
                 Step 1: Raw Material Inspection
               </h3>
               <p className="text-gray-600 text-xs sm:text-sm leading-relaxed">
-                Ensure quality and specifications of incoming billets.
+                Ensure quality and specifications.
               </p>
             </div>
 
@@ -416,32 +416,11 @@ const InfrastructurePlant = () => {
               }
             />
 
-            {/* Step 6 - Surface Treatment */}
+            
+
+            {/* Step 6 - Inspection */}
             <Step
               number={6}
-              title="Surface Treatment"
-              description="Applying coatings or finishing to enhance appearance and resistance."
-              icon={
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth={2}
-                  stroke="currentColor"
-                  className="w-16 h-16 text-green-600"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    d="M12 3v18m9-9H3"
-                  />
-                </svg>
-              }
-            />
-
-            {/* Step 7 - Inspection */}
-            <Step
-              number={7}
               title="Inspection"
               description="Final inspection ensuring quality standards are met before shipment."
               icon={
