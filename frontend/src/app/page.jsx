@@ -216,7 +216,7 @@ const MainContent = () => {
   <img
     src="/mid.png"
     alt="Industrial Color"
-    className="w-full h-full object-cover"
+    className="w-full h-full object-cover hover:scale-105 transition-transform duration-300"
     style={{ borderRadius: 0, cursor: "default" }}
   />
 </div>
