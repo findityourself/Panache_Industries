@@ -101,8 +101,7 @@ export default function QualityControlPage() {
               CERTIFICATIONS
             </h2>
             <p className="text-base sm:text-lg md:text-2xl text-gray-600 mb-6 sm:mb-8">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, aliquam
-              aliquam nisl nisl, eu imperdiet ex ullamcorper eu.
+              
             </p>
           </div>
 
@@ -121,8 +120,7 @@ export default function QualityControlPage() {
                 BIS CERTIFIED
               </h3>
               <p className="sm:text-base text-lg text-gray-600 leading-relaxed">
-                certification description/ metrics etc lorem ipsum dolor sit
-                amet.
+                
               </p>
             </div>
 
@@ -140,8 +138,7 @@ export default function QualityControlPage() {
                 ISO CERTIFIED
               </h3>
               <p className="sm:text-base text-lg text-gray-600 leading-relaxed">
-                certification description/ metrics etc lorem ipsum dolor sit
-                amet.
+                
               </p>
             </div>
 
@@ -159,8 +156,7 @@ export default function QualityControlPage() {
                 OTHER
               </h3>
               <p className="sm:text-base text-lg text-gray-600 leading-relaxed">
-                certification description/ metrics etc lorem ipsum dolor sit
-                amet.
+                
               </p>
             </div>
           </div>
