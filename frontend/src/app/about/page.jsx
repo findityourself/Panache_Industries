@@ -324,7 +324,7 @@ const AboutPage = () => {
         {[
           {
             href: "/quality-control",
-            img: "/q1.jpg",
+            img: "/qbg.jpg",
             title: "QUALITY\nCONTROL",
             alt: "Quality Control",
           },
