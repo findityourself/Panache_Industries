@@ -181,23 +181,24 @@ export default function QualityControlPage() {
 
       {/* Right: 2x2 Grid */}
       <div className="md:w-2/3 w-full grid grid-cols-2 gap-6">
-        {labEquipment.map(({ name, img }, index) => (
+        {labEquipment.map(({ name, img }) => (
           <div
             key={name}
-            onClick={() => setSelectedIndex(index)}
-            className={`cursor-pointer rounded-lg overflow-hidden shadow-md transform transition-transform duration-300
-              ${
-                selectedIndex === index
-                  ? "scale-110 shadow-xl ring-4 ring-blue-500"
-                  : "hover:scale-105"
-              }
-            `}
+            className="
+              rounded-lg overflow-hidden shadow-md
+              transform transition-transform duration-300
+              hover:scale-105 hover:shadow-lg
+              cursor-default select-none
+              focus:outline-none focus:ring-0 focus-visible:outline-none
+              will-change-transform
+            "
             title={name}
+            tabIndex={-1}
           >
             <img
               src={img}
               alt={name}
-              className="w-full h-44 sm:h-52 md:h-56 object-cover"
+              className="w-full h-44 sm:h-52 md:h-56 object-cover select-none pointer-events-none"
               draggable={false}
             />
             <div className="text-center mt-2 font-semibold text-gray-800">
@@ -210,6 +211,7 @@ export default function QualityControlPage() {
     </div>
   </div>
 </section>
+
 </div>  // <-- THIS WAS MISSING
   );
 }
