@@ -208,7 +208,7 @@ const AboutPage = () => {
                 </svg>
               </div>
               <p className="font-serif text-base sm:text-lg text-gray-500 max-w-xs sm:max-w-md mx-auto leading-snug">
-                To empower architects and builders with next-generation aluminum systems.
+                To deliver high quality, precision engineered aluminium products that meet the evolving needs of out clients across industries, while ensuring innovation, durability and timely service through advanced manufacturing processes.
               </p>
             </div>
 
@@ -244,7 +244,7 @@ const AboutPage = () => {
                 </svg>
               </div>
               <p className="font-serif text-base sm:text-lg text-gray-500 max-w-xs sm:max-w-md mx-auto leading-snug">
-                To be India's most trusted name in aluminum innovation.
+                To expand our aluminium business into a global enterprise, setting benchmarks in quality, sustainability, and customer satisfaction while shaping the future of aluminium based solutions.
               </p>
             </div>
           </div>
@@ -259,7 +259,7 @@ const AboutPage = () => {
         OUR VALUES
       </h2>
       <p className="text-base sm:text-lg text-gray-600 mb-8 sm:mb-12">
-        Sustainability, Leadership, and Excellence guide our commitment to delivering superior solutions while respecting the environment and inspiring our teams.
+        Sustainability, Leadership, and Excellence guide our commitment to delivering superior solutions while respecting the environment and inspiring our teams. We run our operation on 75% of renewable energy.
       </p>
 
       <div className="flex flex-col md:flex-row gap-8 md:gap-12 lg:gap-16 items-center md:items-start">

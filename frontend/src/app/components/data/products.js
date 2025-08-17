@@ -82,7 +82,7 @@ export const products = [
     name: "Curtain Wall Systems",
     description: "Efficient facades with structural versatility",
     image:"/hc3.webp",
-    images: ["/hc3.webp", "/hc2.jpg","/hc1.webp","/hc.jpg","/hc4.jpg"],
+    images: ["/hc3.webp", "/hc2.jpg","/hc1.webp","/hc.jpg"],
     
     fullDescription:
       "Explore our range of curtain wall profiles designed for unitized and stick-built systems. Ideal for large commercial facades requiring strength and elegance.",
@@ -99,8 +99,8 @@ export const products = [
     id: 6,
     name: "Glazing Profiles",
     description: "Comprehensive glazing support systems",
-    image:"/g3.jpg",
-    images: ["/g3.jpg"],
+    image:"/hc4.jpg",
+    images: ["/hc4.jpg"],
     
     fullDescription:
       "Designed to support glass panels in architectural applications, our glazing profiles come in a variety of sections for precise installations.",

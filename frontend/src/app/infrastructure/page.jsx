@@ -18,8 +18,10 @@ const InfrastructurePlant = () => {
       <section
         className="relative min-h-[70vh] sm:min-h-[80vh] md:min-h-[100vh] bg-cover bg-center bg-no-repeat flex items-center text-white py-20 sm:py-24 md:py-32 overflow-hidden bg-[#f7f3ed]"
         style={{
-          backgroundImage: `linear-gradient(135deg, rgba(59,130,246,0.1), rgba(147,197,253,0.1)), url('/infrabg.jpg')`,
+          backgroundImage:
+            "linear-gradient(135deg, rgba(59,130,246,0.1), rgba(147,197,253,0.1)), url('/infrabg.jpg')",
         }}
+        aria-label="Infrastructure hero"
       >
         <div className="container mx-auto px-4 sm:px-6 relative z-10 max-w-6xl flex flex-col items-center justify-center text-center">
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold mb-4 sm:mb-6 tracking-wide">
@@ -33,7 +35,8 @@ const InfrastructurePlant = () => {
         </div>
       </section>
 
-      {/* Plant Overview Section *
+      {/* Plant Overview Section (kept commented) */}
+      {/*
       <section className="py-16 sm:py-20 md:py-28 bg-[#f7f3ed]">
         <div className="container mx-auto px-4 sm:px-6 max-w-6xl">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 sm:gap-12 md:gap-16 items-center lg:items-end">
@@ -59,8 +62,9 @@ const InfrastructurePlant = () => {
             <div className="h-64 sm:h-72 md:h-80 flex items-center justify-center shadow-lg overflow-hidden bg-white rounded-lg">
               <img
                 src="/q2.jpg"
-                alt="Plant"
+                alt="Primary plant exterior"
                 className="w-full h-full object-cover"
+                loading="lazy"
               />
             </div>
           </div>
@@ -69,12 +73,14 @@ const InfrastructurePlant = () => {
       */}
 
       {/* Machinery & Technology Section */}
-      <section className="py-16 sm:py-20 md:py-24 bg-[#f7f3ed]">
+      <section
+        className="py-16 sm:py-20 md:py-24 bg-[#f7f3ed]"
+        aria-labelledby="machinery-tech-heading"
+      >
         <div className="max-w-6xl mx-auto px-4 sm:px-6 md:px-8">
           <div className="flex flex-col md:flex-row gap-10 md:gap-16 items-center md:items-start">
-            {/* Left: 2x2 Grid with Hover & Click Effect */}
+            {/* Left: Grid */}
             <div className="md:w-2/3 w-full grid grid-cols-2 md:grid-cols-3 gap-6">
-
               {labEquipment.map(({ name, img }, index) => (
                 <div
                   key={index}
@@ -85,6 +91,7 @@ const InfrastructurePlant = () => {
                     alt={name}
                     className="w-full h-44 sm:h-52 md:h-56 object-cover"
                     draggable={false}
+                    loading="lazy"
                   />
                   <div className="py-3 font-semibold text-gray-800 text-base">
                     {name}
@@ -95,8 +102,11 @@ const InfrastructurePlant = () => {
 
             {/* Right: Heading & Description */}
             <div className="md:w-1/3 w-full text-center md:text-left pt-8 md:pt-16">
-              <h2 className="text-3xl sm:text-4xl font-bold text-blue-600 mb-3 leading-tight">
-                MACHINERY & TECHNOLOGY
+              <h2
+                id="machinery-tech-heading"
+                className="text-3xl sm:text-4xl font-bold text-blue-600 mb-3 leading-tight"
+              >
+                MACHINERY &amp; TECHNOLOGY
               </h2>
               <p className="text-gray-600 text-base sm:text-lg">
                 Our plant is equipped with state-of-the-art machinery to ensure
@@ -109,10 +119,16 @@ const InfrastructurePlant = () => {
       </section>
 
       {/* Manufacturing Workflow Section */}
-      <section className="py-16 sm:py-20 md:py-24 bg-[#FFFDF9]">
+      <section
+        className="py-16 sm:py-20 md:py-24 bg-[#FFFDF9]"
+        aria-labelledby="workflow-heading"
+      >
         <div className="container mx-auto px-4 sm:px-6 max-w-6xl">
           <div className="mb-12 sm:mb-14 md:mb-16">
-            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4 sm:mb-6">
+            <h2
+              id="workflow-heading"
+              className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4 sm:mb-6"
+            >
               Manufacturing Workflow
             </h2>
             <p className="text-gray-600 leading-relaxed text-sm sm:text-base max-w-full sm:max-w-xl md:max-w-4xl">
@@ -123,12 +139,12 @@ const InfrastructurePlant = () => {
 
           <div className="flex flex-col sm:flex-row justify-around items-start relative gap-y-12 sm:gap-y-0 sm:gap-x-4">
             {/* Connecting line for larger screens */}
-            <div className="hidden sm:block absolute top-8 left-1/4 right-1/4 h-0.5 bg-gray-300 z-0"></div>
+            <div className="hidden sm:block absolute top-8 left-1/4 right-1/4 h-0.5 bg-gray-300 z-0" />
 
             {/* Step 1 */}
             <div className="text-center relative z-10 w-full sm:w-1/3 px-2">
               <div className="w-14 h-14 sm:w-16 sm:h-16 bg-gradient-to-br from-orange-400 to-orange-600 rounded-xl sm:rounded-2xl mx-auto mb-4 sm:mb-6 flex items-center justify-center shadow-lg transform rotate-12">
-                <div className="w-7 h-7 sm:w-8 sm:h-8 bg-white rounded-md sm:rounded-lg opacity-30"></div>
+                <div className="w-7 h-7 sm:w-8 sm:h-8 bg-white rounded-md sm:rounded-lg opacity-30" />
               </div>
               <h3 className="text-base sm:text-lg font-bold text-gray-900 mb-2 sm:mb-3 tracking-wide">
                 Step 1: Raw Material Inspection
@@ -141,10 +157,10 @@ const InfrastructurePlant = () => {
             {/* Step 2 */}
             <div className="text-center relative z-10 w-full sm:w-1/3 px-2">
               <div className="w-14 h-14 sm:w-16 sm:h-16 bg-gradient-to-br from-orange-400 to-orange-600 rounded-xl sm:rounded-2xl mx-auto mb-4 sm:mb-6 flex items-center justify-center shadow-lg transform rotate-12">
-                <div className="w-7 h-7 sm:w-8 sm:h-8 bg-white rounded-md sm:rounded-lg opacity-30"></div>
+                <div className="w-7 h-7 sm:w-8 sm:h-8 bg-white rounded-md sm:rounded-lg opacity-30" />
               </div>
               <h3 className="text-base sm:text-lg font-bold text-gray-900 mb-2 sm:mb-3 tracking-wide">
-                Step 2: Production & Processing
+                Step 2: Production &amp; Processing
               </h3>
               <p className="text-gray-600 text-xs sm:text-sm leading-relaxed">
                 Optimized extrusion, shaping, and assembly processes.
@@ -154,7 +170,7 @@ const InfrastructurePlant = () => {
             {/* Step 3 */}
             <div className="text-center relative z-10 w-full sm:w-1/3 px-2">
               <div className="w-14 h-14 sm:w-16 sm:h-16 bg-gradient-to-br from-orange-400 to-orange-600 rounded-xl sm:rounded-2xl mx-auto mb-4 sm:mb-6 flex items-center justify-center shadow-lg transform rotate-12">
-                <div className="w-7 h-7 sm:w-8 sm:h-8 bg-white rounded-md sm:rounded-lg opacity-30"></div>
+                <div className="w-7 h-7 sm:w-8 sm:h-8 bg-white rounded-md sm:rounded-lg opacity-30" />
               </div>
               <h3 className="text-base sm:text-lg font-bold text-gray-900 mb-2 sm:mb-3 tracking-wide">
                 Step 3: Final Quality Check
@@ -165,7 +181,10 @@ const InfrastructurePlant = () => {
             </div>
 
             {/* Arrow pointing right for larger screens */}
-            <div className="hidden sm:flex absolute right-0 top-6 w-10 h-10 sm:w-12 sm:h-12 bg-orange-500 rounded-full items-center justify-center shadow-lg">
+            <div
+              className="hidden sm:flex absolute right-0 top-6 w-10 h-10 sm:w-12 sm:h-12 bg-orange-500 rounded-full items-center justify-center shadow-lg"
+              aria-hidden="true"
+            >
               <svg
                 className="w-5 h-5 sm:w-6 sm:h-6 text-white"
                 fill="none"
@@ -183,23 +202,29 @@ const InfrastructurePlant = () => {
           </div>
         </div>
       </section>
+    </>
+  );
+};
 
-      {/* Gallery Section */}
+export default InfrastructurePlant;
+
+
+      {/* Gallery Section 
       <section className="py-16 sm:py-20 md:py-24 bg-[#f7f3ed]">
         <div className="container mx-auto px-4 sm:px-6 max-w-6xl">
           <div className="mb-10 sm:mb-12">
             <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-3 sm:mb-4">
               GALLERY
             </h2>
-            {/*<p className="text-gray-600 text-xs sm:text-sm max-w-sm leading-relaxed">
+            <p className="text-gray-600 text-xs sm:text-sm max-w-sm leading-relaxed">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit.
               <br />
               aliquam aliquam nisi nisi.
-            </p>*/}
+            </p>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-            {/* Left Column */}
+           Left Column 
             <div className="flex flex-col gap-4">
               <div className="h-[200px] sm:h-[280px] lg:h-[420px] overflow-hidden rounded-lg shadow-md">
                 <img
@@ -224,7 +249,7 @@ const InfrastructurePlant = () => {
               </div>
             </div>
 
-            {/* Middle Column */}
+             Middle Column
             <div className="flex flex-col gap-4">
               <div className="h-[280px] sm:h-[360px] lg:h-[554px] overflow-hidden rounded-lg shadow-md">
                 <img
@@ -249,7 +274,7 @@ const InfrastructurePlant = () => {
               </div>
             </div>
 
-            {/* Right Column */}
+             Right Column 
             <div className="flex flex-col gap-4">
               <div className="h-[140px] sm:h-[180px] lg:h-[279px] overflow-hidden rounded-lg shadow-md">
                 <img
@@ -276,17 +301,21 @@ const InfrastructurePlant = () => {
           </div>
         </div>
       </section>
+      </>
+  );
+};
 
-      {/* Extrusion Process Section */}
+
+      /* Extrusion Process Section 
       <section className="py-16 sm:py-20 md:py-24 bg-[#f7f3ed]">
         <div className="container mx-auto px-4 sm:px-6 max-w-6xl">
-          {/* Header */}
+          {/* Header 
           <div className="mb-12 sm:mb-14 md:mb-16">
             <h2 className="text-3xl sm:text-4xl font-bold text-blue-600 mb-6 sm:mb-8 tracking-wide">
               EXTRUSION PROCESS
             </h2>
 
-            {/* What is Extrusion */}
+            {/* What is Extrusion 
             <div className="mb-8 w-full text-gray-700 text-sm sm:text-base md:text-lg leading-relaxed">
   <p className="whitespace-nowrap sm:whitespace-normal">
     A process that shapes heated aluminum by pushing it through a die using high pressure to create precise profiles.
@@ -298,9 +327,9 @@ const InfrastructurePlant = () => {
             <div className="w-full h-px bg-blue-600 mt-6 sm:mt-8"></div>
           </div>
 
-          {/* Steps */}
+          {/* Steps 
           <div className="space-y-10 sm:space-y-12 md:space-y-16">
-            {/* Step 1 - Heating */}
+            {/* Step 1 - Heating 
             <Step
               number={1}
               title="Heating"
@@ -324,7 +353,7 @@ const InfrastructurePlant = () => {
               }
             />
 
-            {/* Step 2 - Extrusion */}
+            {/* Step 2 - Extrusion
             <Step
               number={2}
               title="Extrusion"
@@ -347,7 +376,7 @@ const InfrastructurePlant = () => {
               }
             />
 
-            {/* Step 3 - Cooling */}
+            {/* Step 3 - Cooling 
             <Step
               number={3}
               title="Cooling"
@@ -370,7 +399,7 @@ const InfrastructurePlant = () => {
               }
             />
 
-            {/* Step 4 - Cutting */}
+            {/* Step 4 - Cutting 
             <Step
               number={4}
               title="Cutting"
@@ -393,7 +422,7 @@ const InfrastructurePlant = () => {
               }
             />
 
-            {/* Step 5 - Aging */}
+            {/* Step 5 - Aging 
             <Step
               number={5}
               title="Aging"
@@ -418,7 +447,7 @@ const InfrastructurePlant = () => {
 
             
 
-            {/* Step 6 - Inspection */}
+            Step 6 - Inspection 
             <Step
               number={6}
               title="Inspection"
@@ -460,6 +489,4 @@ const Step = ({ number, title, description, icon }) => (
     </div>
     <div className="flex-shrink-0 mt-6 sm:mt-0 sm:ml-8">{icon}</div>
   </div>
-);
-
-export default InfrastructurePlant;
+*/}

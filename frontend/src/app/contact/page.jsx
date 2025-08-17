@@ -13,7 +13,7 @@ const ContactPage = () => {
       <div className="relative min-h-[70vh] sm:min-h-[80vh] md:min-h-[100vh] flex items-center overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src="/contact.jpg"
+            src="/contact.png"
             alt="Contact Us Background"
             className="w-full h-full object-cover"
           />
@@ -23,11 +23,7 @@ const ContactPage = () => {
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-4 sm:mb-6 text-center">
             CONTACT US
           </h1>
-          <p className="text-base sm:text-lg text-white/90 max-w-xl md:max-w-2xl text-center px-2">
-            <a href="tel:+919820016325" className="hover:underline" aria-label="Call 98200 16325">+91 98200 16325</a>
-            <span className="mx-2">|</span>
-            <a href="tel:+917400029977" className="hover:underline" aria-label="Call 74000 29977">+91 74000 29977</a>
-          </p>
+          
         </div>
       </div>
 

@@ -116,7 +116,7 @@ const MainContent = () => {
     </div>
     <p className="text-xs mt-1">
       Our PLC-controlled extrusion lines deliver precise, versatile
-      aluminum profiles from 5mm to 200mm.
+      aluminum profiles from 5mm to 300mm.
     </p>
   </div>
 
@@ -192,7 +192,7 @@ const MainContent = () => {
                   </div>
                   <p className="text-sm">
                     Our PLC-controlled extrusion lines deliver precise,
-                    versatile aluminum profiles from 5mm to 200mm.
+                    versatile aluminum profiles from 5mm to 300mm.
                   </p>
                 </div>
                 {/* Bottom Left Industrial Image */}

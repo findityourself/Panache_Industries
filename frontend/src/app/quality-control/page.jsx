@@ -9,7 +9,7 @@ export default function QualityControlPage() {
     { name: "UTS Tester", img: "/q2.jpg" },
     { name: "Brinell Hardness Tester", img: "/q3.jpg" },
     { name: "Chemical Analyser", img: "/q4.jpg" },
-    { name: "Conductivity Tester", img: "/q5.png" },
+    { name: "Conductivity Tester", img: "/Conductivity_tester.png" },
   ];
 
   // State to track which image is selected in the gallery
